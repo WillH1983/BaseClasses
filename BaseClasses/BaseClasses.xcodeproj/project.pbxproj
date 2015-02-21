@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BEBA0CB31A983663006E4FEA /* BaseClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA0CB21A983663006E4FEA /* BaseClasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEBA0CB31A983663006E4FEA /* BaseClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA0CB21A983663006E4FEA /* BaseClasses.h */; };
 		BEBA0CB91A983663006E4FEA /* BaseClasses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA0CAD1A983663006E4FEA /* BaseClasses.framework */; };
-		BEBA0CC01A983663006E4FEA /* BaseClassesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA0CBF1A983663006E4FEA /* BaseClassesTests.m */; };
 		BEBA11821A983DDE006E4FEA /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11791A983CD4006E4FEA /* libRestKit.a */; };
 		BEBA11841A983E55006E4FEA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11831A983E55006E4FEA /* CFNetwork.framework */; };
 		BEBA11861A983E5F006E4FEA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11851A983E5F006E4FEA /* CoreData.framework */; };
@@ -20,6 +19,15 @@
 		BEBA11901A983EEC006E4FEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA118F1A983EEC006E4FEA /* Foundation.framework */; };
 		BEBA11921A983F14006E4FEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11911A983F14006E4FEA /* UIKit.framework */; };
 		BEBA11941A983F3C006E4FEA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11931A983F3C006E4FEA /* SystemConfiguration.framework */; };
+		BEBA119C1A98416F006E4FEA /* AuthenticationService.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11951A98416F006E4FEA /* AuthenticationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEBA119D1A98416F006E4FEA /* AuthenticationService.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11961A98416F006E4FEA /* AuthenticationService.m */; };
+		BEBA119E1A98416F006E4FEA /* BaseService.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11971A98416F006E4FEA /* BaseService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEBA119F1A98416F006E4FEA /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11981A98416F006E4FEA /* BaseService.m */; };
+		BEBA11A01A98416F006E4FEA /* Service.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11991A98416F006E4FEA /* Service.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEBA11A11A98416F006E4FEA /* ServiceClient.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA119A1A98416F006E4FEA /* ServiceClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEBA11A21A98416F006E4FEA /* ServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA119B1A98416F006E4FEA /* ServiceClient.m */; };
+		BEBA11A61A984201006E4FEA /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11A41A984201006E4FEA /* User.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEBA11A71A984201006E4FEA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11A51A984201006E4FEA /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +81,6 @@
 		BEBA0CB21A983663006E4FEA /* BaseClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseClasses.h; sourceTree = "<group>"; };
 		BEBA0CB81A983663006E4FEA /* BaseClassesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseClassesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEBA0CBE1A983663006E4FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BEBA0CBF1A983663006E4FEA /* BaseClassesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseClassesTests.m; sourceTree = "<group>"; };
 		BEBA11711A983CD4006E4FEA /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = BaseClasses/RestKit/RestKit.xcodeproj; sourceTree = SOURCE_ROOT; };
 		BEBA11831A983E55006E4FEA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		BEBA11851A983E5F006E4FEA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -84,6 +91,15 @@
 		BEBA118F1A983EEC006E4FEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BEBA11911A983F14006E4FEA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BEBA11931A983F3C006E4FEA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BEBA11951A98416F006E4FEA /* AuthenticationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationService.h; sourceTree = "<group>"; };
+		BEBA11961A98416F006E4FEA /* AuthenticationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationService.m; sourceTree = "<group>"; };
+		BEBA11971A98416F006E4FEA /* BaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseService.h; sourceTree = "<group>"; };
+		BEBA11981A98416F006E4FEA /* BaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseService.m; sourceTree = "<group>"; };
+		BEBA11991A98416F006E4FEA /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
+		BEBA119A1A98416F006E4FEA /* ServiceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceClient.h; sourceTree = "<group>"; };
+		BEBA119B1A98416F006E4FEA /* ServiceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceClient.m; sourceTree = "<group>"; };
+		BEBA11A41A984201006E4FEA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		BEBA11A51A984201006E4FEA /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +171,6 @@
 		BEBA0CBC1A983663006E4FEA /* BaseClassesTests */ = {
 			isa = PBXGroup;
 			children = (
-				BEBA0CBF1A983663006E4FEA /* BaseClassesTests.m */,
 				BEBA0CBD1A983663006E4FEA /* Supporting Files */,
 			);
 			path = BaseClassesTests;
@@ -172,6 +187,14 @@
 		BEBA0CC91A983C34006E4FEA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BEBA11951A98416F006E4FEA /* AuthenticationService.h */,
+				BEBA11961A98416F006E4FEA /* AuthenticationService.m */,
+				BEBA11971A98416F006E4FEA /* BaseService.h */,
+				BEBA11981A98416F006E4FEA /* BaseService.m */,
+				BEBA11A31A984201006E4FEA /* Models */,
+				BEBA11991A98416F006E4FEA /* Service.h */,
+				BEBA119A1A98416F006E4FEA /* ServiceClient.h */,
+				BEBA119B1A98416F006E4FEA /* ServiceClient.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -204,6 +227,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		BEBA11A31A984201006E4FEA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BEBA11A41A984201006E4FEA /* User.h */,
+				BEBA11A51A984201006E4FEA /* User.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -211,6 +243,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEBA119C1A98416F006E4FEA /* AuthenticationService.h in Headers */,
+				BEBA11A01A98416F006E4FEA /* Service.h in Headers */,
+				BEBA11A61A984201006E4FEA /* User.h in Headers */,
+				BEBA11A11A98416F006E4FEA /* ServiceClient.h in Headers */,
+				BEBA119E1A98416F006E4FEA /* BaseService.h in Headers */,
 				BEBA0CB31A983663006E4FEA /* BaseClasses.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +307,7 @@
 					};
 					BEBA0CB71A983663006E4FEA = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 5EW7K5N9Y3;
 					};
 				};
 			};
@@ -350,6 +388,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEBA11A71A984201006E4FEA /* User.m in Sources */,
+				BEBA119F1A98416F006E4FEA /* BaseService.m in Sources */,
+				BEBA11A21A98416F006E4FEA /* ServiceClient.m in Sources */,
+				BEBA119D1A98416F006E4FEA /* AuthenticationService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +399,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEBA0CC01A983663006E4FEA /* BaseClassesTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,7 +523,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "874278d7-d5b9-4a9f-8a6a-2727ce291b84";
+				PROVISIONING_PROFILE = "7e6cd3a4-e7c2-4b8c-b293-eb8305b2d1ec";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -508,7 +549,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "874278d7-d5b9-4a9f-8a6a-2727ce291b84";
+				PROVISIONING_PROFILE = "7e6cd3a4-e7c2-4b8c-b293-eb8305b2d1ec";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -516,6 +557,7 @@
 		BEBA0CC71A983663006E4FEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -527,12 +569,14 @@
 				INFOPLIST_FILE = BaseClassesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		BEBA0CC81A983663006E4FEA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -540,6 +584,7 @@
 				INFOPLIST_FILE = BaseClassesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -562,6 +607,7 @@
 				BEBA0CC51A983663006E4FEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEBA0CC61A983663006E4FEA /* Build configuration list for PBXNativeTarget "BaseClassesTests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +616,7 @@
 				BEBA0CC81A983663006E4FEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
