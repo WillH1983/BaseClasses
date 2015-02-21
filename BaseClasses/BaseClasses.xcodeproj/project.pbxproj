@@ -118,15 +118,6 @@
 		BEBA0CA31A983663006E4FEA = {
 			isa = PBXGroup;
 			children = (
-				BEBA11931A983F3C006E4FEA /* SystemConfiguration.framework */,
-				BEBA11911A983F14006E4FEA /* UIKit.framework */,
-				BEBA118F1A983EEC006E4FEA /* Foundation.framework */,
-				BEBA118D1A983E88006E4FEA /* libxml2.dylib */,
-				BEBA118B1A983E79006E4FEA /* QuartzCore.framework */,
-				BEBA11891A983E71006E4FEA /* Security.framework */,
-				BEBA11871A983E69006E4FEA /* MobileCoreServices.framework */,
-				BEBA11851A983E5F006E4FEA /* CoreData.framework */,
-				BEBA11831A983E55006E4FEA /* CFNetwork.framework */,
 				BEBA0CAF1A983663006E4FEA /* BaseClasses */,
 				BEBA0CBC1A983663006E4FEA /* BaseClassesTests */,
 				BEBA0CAE1A983663006E4FEA /* Products */,
@@ -188,7 +179,16 @@
 		BEBA11701A983CB1006E4FEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BEBA11831A983E55006E4FEA /* CFNetwork.framework */,
+				BEBA11851A983E5F006E4FEA /* CoreData.framework */,
+				BEBA118F1A983EEC006E4FEA /* Foundation.framework */,
+				BEBA118D1A983E88006E4FEA /* libxml2.dylib */,
+				BEBA11871A983E69006E4FEA /* MobileCoreServices.framework */,
+				BEBA118B1A983E79006E4FEA /* QuartzCore.framework */,
 				BEBA11711A983CD4006E4FEA /* RestKit.xcodeproj */,
+				BEBA11891A983E71006E4FEA /* Security.framework */,
+				BEBA11931A983F3C006E4FEA /* SystemConfiguration.framework */,
+				BEBA11911A983F14006E4FEA /* UIKit.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
