@@ -28,6 +28,7 @@
 		BEBA11A21A98416F006E4FEA /* ServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA119B1A98416F006E4FEA /* ServiceClient.m */; };
 		BEBA11A61A984201006E4FEA /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11A41A984201006E4FEA /* User.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEBA11A71A984201006E4FEA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11A51A984201006E4FEA /* User.m */; };
+		BEC1BF681A9942BF00E6131C /* libRestKit.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = BEBA11791A983CD4006E4FEA /* libRestKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,19 @@
 			remoteInfo = RestKit;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BEC1BF641A9942B000E6131C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Libraries;
+			dstSubfolderSpec = 7;
+			files = (
+				BEC1BF681A9942BF00E6131C /* libRestKit.a in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BEBA0CAD1A983663006E4FEA /* BaseClasses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseClasses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -263,6 +277,7 @@
 				BEBA0CA91A983663006E4FEA /* Frameworks */,
 				BEBA0CAA1A983663006E4FEA /* Headers */,
 				BEBA0CAB1A983663006E4FEA /* Resources */,
+				BEC1BF641A9942B000E6131C /* CopyFiles */,
 			);
 			buildRules = (
 			);
