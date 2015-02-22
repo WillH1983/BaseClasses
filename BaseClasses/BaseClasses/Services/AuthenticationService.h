@@ -10,7 +10,7 @@
 
 @class User;
 
-@interface AuthenticationService : BaseService <MealService>
+@interface AuthenticationService : BaseService <Service>
 - (void)registerUser:(User *)user withSuccessBlock:(void (^)(User *user))successBlock andError:(void (^)(NSError *error))errorBlock;
 - (void)loginUser:(User *)user withSuccessBlock:(void (^)(User *user))successBlock andError:(void (^)(NSError *error))errorBlock;
 @end

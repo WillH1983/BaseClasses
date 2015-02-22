@@ -10,7 +10,7 @@
 
 @class RKObjectMapping;
 
-@protocol MealService <NSObject>
+@protocol Service <NSObject>
 @optional
 - (NSString *)serviceURL;
 - (RKObjectMapping *)mappingProvider;

@@ -15,7 +15,7 @@ NSString* const LifeServiceErrorDomain = @"com.LifeServices.Life";
 
 @implementation ServiceClient
 
-- (void)postObject:(id)object andService:(id<MealService>)lifeService withSuccessBlock:(void (^)(RKMappingResult *result))successBlock andError:(void (^)(NSError *error))errorBlock {
+- (void)postObject:(id)object andService:(id<Service>)lifeService withSuccessBlock:(void (^)(RKMappingResult *result))successBlock andError:(void (^)(NSError *error))errorBlock {
     if ([lifeService respondsToSelector:@selector(serviceURL)] &&
         [lifeService respondsToSelector:@selector(baseURL)]) {
         RKObjectManager *objectManager = [self objectManagerForService:lifeService];
@@ -28,7 +28,7 @@ NSString* const LifeServiceErrorDomain = @"com.LifeServices.Life";
 
 }
 
-- (void)putObject:(id)object andService:(id<MealService>)lifeService withSuccessBlock:(void (^)(RKMappingResult *result))successBlock andError:(void (^)(NSError *error))errorBlock {
+- (void)putObject:(id)object andService:(id<Service>)lifeService withSuccessBlock:(void (^)(RKMappingResult *result))successBlock andError:(void (^)(NSError *error))errorBlock {
     if ([lifeService respondsToSelector:@selector(serviceURL)] &&
         [lifeService respondsToSelector:@selector(baseURL)]) {
         RKObjectManager *objectManager = [self objectManagerForService:lifeService];
@@ -40,7 +40,7 @@ NSString* const LifeServiceErrorDomain = @"com.LifeServices.Life";
     }
 }
 
-- (RKObjectManager *)objectManagerForService:(id<MealService>)service {
+- (RKObjectManager *)objectManagerForService:(id<Service>)service {
     RKObjectManager *objectManager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:[service baseURL]]];
     [objectManager setAcceptHeaderWithMIMEType:@"*/*"];
     [objectManager setRequestSerializationMIMEType:RKMIMETypeJSON];
@@ -61,7 +61,7 @@ NSString* const LifeServiceErrorDomain = @"com.LifeServices.Life";
     return objectManager;
 }
 
-- (void)getForService:(id<MealService>)service withSuccess:(void (^)(RKMappingResult *result))successBlock andError:(void (^)(NSError *error))errorBlock {
+- (void)getForService:(id<Service>)service withSuccess:(void (^)(RKMappingResult *result))successBlock andError:(void (^)(NSError *error))errorBlock {
     if ([service respondsToSelector:@selector(serviceURL)] &&
         [service respondsToSelector:@selector(baseURL)]) {
         RKObjectManager *objectManager = [self objectManagerForService:service];
@@ -75,11 +75,11 @@ NSString* const LifeServiceErrorDomain = @"com.LifeServices.Life";
     }
 }
 
-- (void)deleteObject:(id)object andService:(id<MealService>)lifeService withSuccessBlock:(void (^)(RKMappingResult *result))successBlock andError:(void (^)(NSError *error))errorBlock {
+- (void)deleteObject:(id)object andService:(id<Service>)lifeService withSuccessBlock:(void (^)(RKMappingResult *result))successBlock andError:(void (^)(NSError *error))errorBlock {
     [self deleteObjects:@[object] andService:lifeService withSuccessBlock:successBlock andError:errorBlock];
 }
 
-- (void)deleteObjects:(NSArray *)objects andService:(id<MealService>)lifeService withSuccessBlock:(void (^)(RKMappingResult *result))successBlock andError:(void (^)(NSError *error))errorBlock {
+- (void)deleteObjects:(NSArray *)objects andService:(id<Service>)lifeService withSuccessBlock:(void (^)(RKMappingResult *result))successBlock andError:(void (^)(NSError *error))errorBlock {
     if ([lifeService respondsToSelector:@selector(serviceURL)] &&
         [lifeService respondsToSelector:@selector(baseURL)]) {
         RKObjectManager *objectManager = [self objectManagerForService:lifeService];
@@ -91,7 +91,7 @@ NSString* const LifeServiceErrorDomain = @"com.LifeServices.Life";
     }
 }
 
-- (Class)getSerializationObjectClassForService:(id<MealService>)service {
+- (Class)getSerializationObjectClassForService:(id<Service>)service {
     
     if ([service respondsToSelector:@selector(serializedMappingProvider)]) {
         return [service serializedMappingProvider].objectClass;
@@ -100,7 +100,7 @@ NSString* const LifeServiceErrorDomain = @"com.LifeServices.Life";
     return [NSMutableDictionary class];
 }
 
-- (RKObjectMapping *)getSerializationMappingForService:(id<MealService>)service {
+- (RKObjectMapping *)getSerializationMappingForService:(id<Service>)service {
     RKObjectMapping *serializationMapping = nil;
     
     if ([service respondsToSelector:@selector(serializedMappingProvider)]) {
@@ -116,7 +116,7 @@ NSString* const LifeServiceErrorDomain = @"com.LifeServices.Life";
     return serializationMapping;
 }
 
-- (RKObjectMapping *)getMappingForService:(id<MealService>)service {
+- (RKObjectMapping *)getMappingForService:(id<Service>)service {
     RKObjectMapping *mapping = nil;
     
     if ([service respondsToSelector:@selector(mappingProvider)]) {
