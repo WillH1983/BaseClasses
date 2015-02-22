@@ -6,7 +6,7 @@
 //
 //
 
-#import <RestKit/RestKit.h>
+#import "RestKit.h"
 #import "AuthenticationService.h"
 #import "User.h"
 #import "ServiceClient.h"

@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Service.h"
-
-@class RKMappingResult;
+#import "RestKit.h"
 
 extern NSString* const LifeServiceErrorDomain;
 

@@ -8,7 +8,6 @@
 
 
 #import "ServiceClient.h"
-#import "RestKit/Restkit.h"
 #import "User.h"
 
 NSString* const LifeServiceErrorDomain = @"com.LifeServices.Life";
