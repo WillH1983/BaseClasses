@@ -6,6 +6,8 @@
 //
 //
 
+#import "RestKit/RestKit.h"
+
 #import "BaseService.h"
 
 @class User;
