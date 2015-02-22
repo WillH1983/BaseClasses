@@ -8,7 +8,7 @@
 
 #import "BaseService.h"
 
-@implementation BaseMealService
+@implementation BaseService
 
 - (NSString *)baseURL {
     return @"https://api.parse.com";

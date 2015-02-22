@@ -11,12 +11,12 @@
 #import "User.h"
 #import "ServiceClient.h"
 
-@interface MealAuthenticationService()
+@interface AuthenticationService()
 @property (nonatomic, strong) NSDictionary *params;
 @property (nonatomic, assign) BOOL loggingIn;
 @end
 
-@implementation MealAuthenticationService
+@implementation AuthenticationService
 - (void)registerUser:(User *)user withSuccessBlock:(void (^)(User *user))successBlock andError:(void (^)(NSError *error))errorBlock {
     ServiceClient *serviceClient = [ServiceClient new];
     [serviceClient postObject:user andService:self withSuccessBlock:^(RKMappingResult *result) {

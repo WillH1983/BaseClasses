@@ -10,6 +10,6 @@
 
 #import "Service.h"
 
-@interface BaseMealService : NSObject
+@interface BaseService : NSObject
 - (NSString *)baseURL;
 @end
