@@ -66,8 +66,15 @@ NSString* const ServiceErrorDomain = @"com.Services.BaseClasses";
         [objectManager.HTTPClient setDefaultHeader:@"X-Parse-Session-Token" value:user.sessionToken];
     }
     
-    [objectManager.HTTPClient setDefaultHeader:@"X-Parse-Application-Id" value:@"Wme1ksSkFZg9S4RyXWwvl7qsg6vREiSKk971ums0"];
-    [objectManager.HTTPClient setDefaultHeader:@"X-Parse-REST-API-Key" value:@"AzU3ZJMuvgWDj5ladeVSLmQozm04MJL8yA8OGI44"];
+    NSDictionary *informationDictionary = [[NSBundle mainBundle] infoDictionary];
+    NSString *parseApplicationId = [informationDictionary valueForKey:@"ParseApplicationId"];
+    NSAssert(parseApplicationId != nil, @"Provide a Parse Application Id in the info PLIST file");
+    
+    NSString *parseRestAPIKey = [informationDictionary valueForKey:@"ParseRestAPIKey"];
+    NSAssert(parseRestAPIKey != nil, @"Provide a Parse Rest API key in the info PLIST file");
+    
+    [objectManager.HTTPClient setDefaultHeader:@"X-Parse-Application-Id" value:parseApplicationId];
+    [objectManager.HTTPClient setDefaultHeader:@"X-Parse-REST-API-Key" value:parseRestAPIKey];
     RKLogConfigureByName("RestKit/Network", RKLogLevelTrace);
     return objectManager;
 }
