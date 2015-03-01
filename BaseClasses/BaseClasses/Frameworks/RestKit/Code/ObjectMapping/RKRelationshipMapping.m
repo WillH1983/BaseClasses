@@ -28,6 +28,8 @@
 @end
 
 @implementation RKRelationshipMapping
+@dynamic sourceKeyPath;
+@dynamic destinationKeyPath;
 
 + (instancetype)relationshipMappingFromKeyPath:(NSString *)sourceKeyPath toKeyPath:(NSString *)destinationKeyPath withMapping:(RKMapping *)mapping
 {

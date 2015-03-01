@@ -26,6 +26,8 @@
 @end
 
 @implementation RKAttributeMapping
+@dynamic sourceKeyPath;
+@dynamic destinationKeyPath;
 
 + (instancetype)attributeMappingFromKeyPath:(NSString *)sourceKeyPath toKeyPath:(NSString *)destinationKeyPath
 {
