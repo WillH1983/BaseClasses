@@ -46,6 +46,8 @@
 		BEB596B31AA2EA0E0037CB29 /* BaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB596B01AA2EA0E0037CB29 /* BaseModel.h */; };
 		BEB596B41AA2EA0E0037CB29 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB596B11AA2EA0E0037CB29 /* BaseModel.m */; };
 		BEB596B51AA2EA0E0037CB29 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB596B11AA2EA0E0037CB29 /* BaseModel.m */; };
+		BEB596B71AA2EB630037CB29 /* ServiceErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB596B61AA2EB630037CB29 /* ServiceErrors.h */; };
+		BEB596B81AA2EB630037CB29 /* ServiceErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB596B61AA2EB630037CB29 /* ServiceErrors.h */; };
 		BEBA0CB31A983663006E4FEA /* BaseClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA0CB21A983663006E4FEA /* BaseClasses.h */; };
 		BEBA0CB91A983663006E4FEA /* BaseClasses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA0CAD1A983663006E4FEA /* BaseClasses.framework */; };
 		BEBA11841A983E55006E4FEA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11831A983E55006E4FEA /* CFNetwork.framework */; };
@@ -146,6 +148,7 @@
 		BEB596AB1AA2E9E60037CB29 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 		BEB596B01AA2EA0E0037CB29 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		BEB596B11AA2EA0E0037CB29 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		BEB596B61AA2EB630037CB29 /* ServiceErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceErrors.h; sourceTree = "<group>"; };
 		BEBA0CAD1A983663006E4FEA /* BaseClasses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseClasses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEBA0CB11A983663006E4FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEBA0CB21A983663006E4FEA /* BaseClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseClasses.h; sourceTree = "<group>"; };
@@ -316,6 +319,7 @@
 				BEBA11991A98416F006E4FEA /* Service.h */,
 				BEBA119A1A98416F006E4FEA /* ServiceClient.h */,
 				BEBA119B1A98416F006E4FEA /* ServiceClient.m */,
+				BEB596B61AA2EB630037CB29 /* ServiceErrors.h */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -360,6 +364,7 @@
 				BEB596AD1AA2E9E60037CB29 /* Config.h in Headers */,
 				BEB5968C1AA2D40D0037CB29 /* User.h in Headers */,
 				BEB5967E1AA2D3DD0037CB29 /* BaseClasses.h in Headers */,
+				BEB596B81AA2EB630037CB29 /* ServiceErrors.h in Headers */,
 				BEB5968F1AA2D4140037CB29 /* ServiceClient.h in Headers */,
 				BEB5968E1AA2D4120037CB29 /* Service.h in Headers */,
 				BEB596881AA2D4000037CB29 /* AuthenticationService.h in Headers */,
@@ -376,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEB596AC1AA2E9E60037CB29 /* Config.h in Headers */,
+				BEB596B71AA2EB630037CB29 /* ServiceErrors.h in Headers */,
 				BEBA119C1A98416F006E4FEA /* AuthenticationService.h in Headers */,
 				BEB596A01AA2E9630037CB29 /* ApplicationConfigManager.h in Headers */,
 				BEB596B21AA2EA0E0037CB29 /* BaseModel.h in Headers */,

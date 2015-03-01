@@ -9,34 +9,46 @@
 
 #import "ServiceClient.h"
 #import "User.h"
+#import "ApplicationConfigManager.h"
+#import "ServiceErrors.h"
 
-NSString* const LifeServiceErrorDomain = @"com.LifeServices.Life";
+NSString* const ServiceErrorDomain = @"com.Services.BaseClasses";
 
 @implementation ServiceClient
 
 - (void)postObject:(id)object andService:(id<Service>)lifeService withSuccessBlock:(void (^)(RKMappingResult *result))successBlock andError:(void (^)(NSError *error))errorBlock {
-    if ([lifeService respondsToSelector:@selector(serviceURL)] &&
-        [lifeService respondsToSelector:@selector(baseURL)]) {
-        RKObjectManager *objectManager = [self objectManagerForService:lifeService];
-        [objectManager postObject:object path:[lifeService serviceURL] parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-            if (successBlock) successBlock(mappingResult);
-        } failure:^(RKObjectRequestOperation *operation, NSError *error) {
-            if (errorBlock) errorBlock(error);
-        }];
-    }
+    [self checkForLifeErrorCodesWithSuccess:^{
+        if ([lifeService respondsToSelector:@selector(serviceURL)] &&
+            [lifeService respondsToSelector:@selector(baseURL)]) {
+            RKObjectManager *objectManager = [self objectManagerForService:lifeService];
+            [objectManager postObject:object path:[lifeService serviceURL] parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+                if (successBlock) successBlock(mappingResult);
+            } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+                if (errorBlock) errorBlock(error);
+            }];
+        }
+    } andError:^(NSError *error) {
+        if (errorBlock) errorBlock(error);
+    }];
+    
 
 }
 
 - (void)putObject:(id)object andService:(id<Service>)lifeService withSuccessBlock:(void (^)(RKMappingResult *result))successBlock andError:(void (^)(NSError *error))errorBlock {
-    if ([lifeService respondsToSelector:@selector(serviceURL)] &&
-        [lifeService respondsToSelector:@selector(baseURL)]) {
-        RKObjectManager *objectManager = [self objectManagerForService:lifeService];
-        [objectManager putObject:object path:[lifeService serviceURL] parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-            if (successBlock) successBlock(mappingResult);
-        } failure:^(RKObjectRequestOperation *operation, NSError *error) {
-            if (errorBlock) errorBlock(error);
-        }];
-    }
+    [self checkForLifeErrorCodesWithSuccess:^{
+        if ([lifeService respondsToSelector:@selector(serviceURL)] &&
+            [lifeService respondsToSelector:@selector(baseURL)]) {
+            RKObjectManager *objectManager = [self objectManagerForService:lifeService];
+            [objectManager putObject:object path:[lifeService serviceURL] parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+                if (successBlock) successBlock(mappingResult);
+            } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+                if (errorBlock) errorBlock(error);
+            }];
+        }
+    } andError:^(NSError *error) {
+        if (errorBlock) errorBlock(error);
+    }];
+    
 }
 
 - (RKObjectManager *)objectManagerForService:(id<Service>)service {
@@ -61,17 +73,22 @@ NSString* const LifeServiceErrorDomain = @"com.LifeServices.Life";
 }
 
 - (void)getForService:(id<Service>)service withSuccess:(void (^)(RKMappingResult *result))successBlock andError:(void (^)(NSError *error))errorBlock {
-    if ([service respondsToSelector:@selector(serviceURL)] &&
-        [service respondsToSelector:@selector(baseURL)]) {
-        RKObjectManager *objectManager = [self objectManagerForService:service];
-
-        [objectManager getObjectsAtPath:[service serviceURL] parameters:[service parameters] success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-            successBlock(mappingResult);
-        } failure:^(RKObjectRequestOperation *operation, NSError *error) {
-            errorBlock(error);
-        }];
-        
-    }
+    [self checkForLifeErrorCodesWithSuccess:^{
+        if ([service respondsToSelector:@selector(serviceURL)] &&
+            [service respondsToSelector:@selector(baseURL)]) {
+            RKObjectManager *objectManager = [self objectManagerForService:service];
+            
+            [objectManager getObjectsAtPath:[service serviceURL] parameters:[service parameters] success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+                successBlock(mappingResult);
+            } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+                errorBlock(error);
+            }];
+            
+        }
+    } andError:^(NSError *error) {
+        if (errorBlock) errorBlock(error);
+    }];
+    
 }
 
 - (void)deleteObject:(id)object andService:(id<Service>)lifeService withSuccessBlock:(void (^)(RKMappingResult *result))successBlock andError:(void (^)(NSError *error))errorBlock {
@@ -79,15 +96,20 @@ NSString* const LifeServiceErrorDomain = @"com.LifeServices.Life";
 }
 
 - (void)deleteObjects:(NSArray *)objects andService:(id<Service>)lifeService withSuccessBlock:(void (^)(RKMappingResult *result))successBlock andError:(void (^)(NSError *error))errorBlock {
-    if ([lifeService respondsToSelector:@selector(serviceURL)] &&
-        [lifeService respondsToSelector:@selector(baseURL)]) {
-        RKObjectManager *objectManager = [self objectManagerForService:lifeService];
-        [objectManager postObject:objects path:[lifeService serviceURL] parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-            if (successBlock) successBlock(mappingResult);
-        } failure:^(RKObjectRequestOperation *operation, NSError *error) {
-            if (errorBlock) errorBlock(error);
-        }];
-    }
+    [self checkForLifeErrorCodesWithSuccess:^{
+        if ([lifeService respondsToSelector:@selector(serviceURL)] &&
+            [lifeService respondsToSelector:@selector(baseURL)]) {
+            RKObjectManager *objectManager = [self objectManagerForService:lifeService];
+            [objectManager postObject:objects path:[lifeService serviceURL] parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+                if (successBlock) successBlock(mappingResult);
+            } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+                if (errorBlock) errorBlock(error);
+            }];
+        }
+    } andError:^(NSError *error) {
+        if (errorBlock) errorBlock(error);
+    }];
+    
 }
 
 - (Class)getSerializationObjectClassForService:(id<Service>)service {
@@ -129,6 +151,38 @@ NSString* const LifeServiceErrorDomain = @"com.LifeServices.Life";
         return [RKObjectMapping mappingForClass:[NSMutableDictionary class]];
     }
     return mapping;
+}
+
+- (void)checkForLifeErrorCodesWithSuccess:(void (^)())successBlock andError:(void (^)(NSError *error))errorBlock {
+    NSError *error;
+    if ([[ApplicationConfigManager sharedManager] shouldForceUpgrade]) {
+        NSString *upgradeMessage = [[ApplicationConfigManager sharedManager] forceUpgradeMessage];
+        NSString *upgradeTitle = [[ApplicationConfigManager sharedManager] forceUpgradeTitle];
+        NSString *forceUpgradeURL = [[ApplicationConfigManager sharedManager] forceUpgradeURL];
+        
+        NSMutableDictionary *mutableUpgradeDictionary = [NSMutableDictionary new];
+        if (upgradeMessage) {
+            [mutableUpgradeDictionary setObject:upgradeMessage forKey:NSLocalizedDescriptionKey];
+        }
+        
+        if (upgradeTitle) {
+            [mutableUpgradeDictionary setObject:upgradeTitle forKey:kForceUpgradeTitleKey];
+        }
+        
+        if (forceUpgradeURL) {
+            [mutableUpgradeDictionary setObject:forceUpgradeURL forKey:kForceUpgradeURL];
+        }
+        error = [NSError errorWithDomain:ServiceErrorDomain code:ServiceErrorForceUpgrade userInfo:mutableUpgradeDictionary];
+        if (errorBlock) errorBlock(error);
+    } else if ([[ApplicationConfigManager sharedManager] isInMaintenanceMode]) {
+        NSDictionary *userInfo = @{NSLocalizedDescriptionKey: [[ApplicationConfigManager sharedManager] maintenanceModeMessage],
+                                   kMaintenanceModeErrorTitleKey: @"Maintenance Mode"};
+        error = [NSError errorWithDomain:ServiceErrorDomain code:ServiceErrorMaintenanceMode userInfo:userInfo];
+        if (errorBlock) errorBlock(error);
+    } else {
+        if (successBlock) successBlock();
+    }
+    
 }
 
 @end
