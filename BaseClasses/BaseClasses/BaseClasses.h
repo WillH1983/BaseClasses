@@ -14,9 +14,10 @@
 #import <BaseClasses/ConfigService.h>
 #import <BaseClasses/ServiceClient.h>
 #import <BaseClasses/User.h>
-#import <BaseClasses/RestKit/ObjectMapping.h>
-#import <BaseClasses/RestKit/Network.h>
-#import <BaseClasses/RestKit/CoreData.h>
+#import <BaseClasses/RestKit/RKMacros.h>
+#import <BaseClasses/RestKit/RKMapping.h>
+#import <BaseClasses/RestKit/RKMappingResult.h>
+#import <BaseClasses/RestKit/RKObjectMapping.h>
 
 
 //! Project version number for BaseClasses.
