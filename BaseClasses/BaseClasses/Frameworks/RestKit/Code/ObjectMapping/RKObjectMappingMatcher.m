@@ -57,7 +57,7 @@
     return self;
 }
 
-- (BOOL)matches:(id)object
+- (BOOL)matches2:(id)object
 {
     return NO;
 }
@@ -81,7 +81,7 @@
     return self;
 }
 
-- (BOOL)matches:(id)object
+- (BOOL)matches2:(id)object
 {
     id value = [object valueForKeyPath:self.keyPath];
     if (value == nil) return NO;
@@ -110,7 +110,7 @@
     return self;
 }
 
-- (BOOL)matches:(id)object
+- (BOOL)matches2:(id)object
 {
     return [self.predicate evaluateWithObject:object];
 }

@@ -78,7 +78,7 @@
 
     // Consult the declarative matchers first
     for (RKObjectMappingMatcher *matcher in self.mutableMatchers) {
-        if ([matcher matches:representation]) {
+        if ([matcher matches2:representation]) {
             RKLogTrace(@"Found declarative match for matcher: %@.", matcher);
             return matcher.objectMapping;
         }
