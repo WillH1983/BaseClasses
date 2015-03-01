@@ -104,10 +104,8 @@ NSString *RKStringFromIndexSet(NSIndexSet *indexSet); // Defined in RKResponseDe
 
 #pragma mark - NSURLConnectionDelegate methods
 
-- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
-{
-    [super connection:connection didReceiveAuthenticationChallenge:challenge];
-
+- (void)connection:(NSURLConnection *)connection willSendRequestForAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
+    [super connection:connection willSendRequestForAuthenticationChallenge:challenge];
     RKLogDebug(@"Received authentication challenge");
 }
 
