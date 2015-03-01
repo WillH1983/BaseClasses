@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EEAE2ED7-51A2-44CD-8A4A-C4B1AF69C567</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BaseClasses</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D22D8807FEB013E5E252CEC1D186949504BDF416</key>
+		<string>https://github.com/WillH1983/BaseClasses.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BaseClasses/BaseClasses.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D22D8807FEB013E5E252CEC1D186949504BDF416</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/WillH1983/BaseClasses.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D22D8807FEB013E5E252CEC1D186949504BDF416</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D22D8807FEB013E5E252CEC1D186949504BDF416</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BaseClasses</string>
+		</dict>
+	</array>
+</dict>
+</plist>

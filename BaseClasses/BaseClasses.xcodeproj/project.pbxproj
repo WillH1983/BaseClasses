@@ -8,6 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		BE5E20251A9A884A003074D9 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5E201C1A9A8645003074D9 /* libRestKit.a */; };
+		BEB596721AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BEB596711AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch */; };
+		BEB596741AA2D3B00037CB29 /* BaseClassesSDK-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEB596731AA2D3B00037CB29 /* BaseClassesSDK-Info.plist */; };
+		BEB5967D1AA2D3D20037CB29 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5E201C1A9A8645003074D9 /* libRestKit.a */; };
+		BEB5967E1AA2D3DD0037CB29 /* BaseClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA0CB21A983663006E4FEA /* BaseClasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEB5967F1AA2D3E10037CB29 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11831A983E55006E4FEA /* CFNetwork.framework */; };
+		BEB596801AA2D3E40037CB29 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11851A983E5F006E4FEA /* CoreData.framework */; };
+		BEB596811AA2D3E70037CB29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA118F1A983EEC006E4FEA /* Foundation.framework */; };
+		BEB596821AA2D3E90037CB29 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA118D1A983E88006E4FEA /* libxml2.dylib */; };
+		BEB596831AA2D3EC0037CB29 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11871A983E69006E4FEA /* MobileCoreServices.framework */; };
+		BEB596841AA2D3EE0037CB29 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA118B1A983E79006E4FEA /* QuartzCore.framework */; };
+		BEB596851AA2D3F10037CB29 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11891A983E71006E4FEA /* Security.framework */; };
+		BEB596861AA2D3F50037CB29 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11931A983F3C006E4FEA /* SystemConfiguration.framework */; };
+		BEB596871AA2D3F90037CB29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11911A983F14006E4FEA /* UIKit.framework */; };
+		BEB596881AA2D4000037CB29 /* AuthenticationService.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11951A98416F006E4FEA /* AuthenticationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEB596891AA2D4030037CB29 /* AuthenticationService.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11961A98416F006E4FEA /* AuthenticationService.m */; };
+		BEB5968A1AA2D4060037CB29 /* BaseService.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11971A98416F006E4FEA /* BaseService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEB5968B1AA2D4090037CB29 /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11981A98416F006E4FEA /* BaseService.m */; };
+		BEB5968C1AA2D40D0037CB29 /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11A41A984201006E4FEA /* User.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEB5968D1AA2D4100037CB29 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11A51A984201006E4FEA /* User.m */; };
+		BEB5968E1AA2D4120037CB29 /* Service.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11991A98416F006E4FEA /* Service.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEB5968F1AA2D4140037CB29 /* ServiceClient.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA119A1A98416F006E4FEA /* ServiceClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEB596901AA2D4170037CB29 /* ServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA119B1A98416F006E4FEA /* ServiceClient.m */; };
 		BEBA0CB31A983663006E4FEA /* BaseClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA0CB21A983663006E4FEA /* BaseClasses.h */; };
 		BEBA0CB91A983663006E4FEA /* BaseClasses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA0CAD1A983663006E4FEA /* BaseClasses.framework */; };
 		BEBA11841A983E55006E4FEA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11831A983E55006E4FEA /* CFNetwork.framework */; };
@@ -66,6 +88,13 @@
 			remoteGlobalIDString = 25160D1514564E810060A5C5;
 			remoteInfo = RestKit;
 		};
+		BEB5967B1AA2D3C20037CB29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE5E20141A9A8645003074D9 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
 		BEBA0CBA1A983663006E4FEA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BEBA0CA41A983663006E4FEA /* Project object */;
@@ -89,6 +118,10 @@
 
 /* Begin PBXFileReference section */
 		BE5E20141A9A8645003074D9 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		BEB5966D1AA2D3B00037CB29 /* BaseClassesSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseClassesSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB596701AA2D3B00037CB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEB596711AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseClassesSDK-Prefix.pch"; sourceTree = "<group>"; };
+		BEB596731AA2D3B00037CB29 /* BaseClassesSDK-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BaseClassesSDK-Info.plist"; sourceTree = "<group>"; };
 		BEBA0CAD1A983663006E4FEA /* BaseClasses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BaseClasses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEBA0CB11A983663006E4FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEBA0CB21A983663006E4FEA /* BaseClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseClasses.h; sourceTree = "<group>"; };
@@ -115,6 +148,23 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BEB596671AA2D3B00037CB29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB5967F1AA2D3E10037CB29 /* CFNetwork.framework in Frameworks */,
+				BEB596861AA2D3F50037CB29 /* SystemConfiguration.framework in Frameworks */,
+				BEB596801AA2D3E40037CB29 /* CoreData.framework in Frameworks */,
+				BEB596841AA2D3EE0037CB29 /* QuartzCore.framework in Frameworks */,
+				BEB5967D1AA2D3D20037CB29 /* libRestKit.a in Frameworks */,
+				BEB596831AA2D3EC0037CB29 /* MobileCoreServices.framework in Frameworks */,
+				BEB596811AA2D3E70037CB29 /* Foundation.framework in Frameworks */,
+				BEB596851AA2D3F10037CB29 /* Security.framework in Frameworks */,
+				BEB596821AA2D3E90037CB29 /* libxml2.dylib in Frameworks */,
+				BEB596871AA2D3F90037CB29 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEBA0CA91A983663006E4FEA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -154,11 +204,30 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		BEB5966E1AA2D3B00037CB29 /* BaseClassesSDK */ = {
+			isa = PBXGroup;
+			children = (
+				BEB596711AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch */,
+				BEB596731AA2D3B00037CB29 /* BaseClassesSDK-Info.plist */,
+				BEB5966F1AA2D3B00037CB29 /* Supporting Files */,
+			);
+			path = BaseClassesSDK;
+			sourceTree = "<group>";
+		};
+		BEB5966F1AA2D3B00037CB29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEB596701AA2D3B00037CB29 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		BEBA0CA31A983663006E4FEA = {
 			isa = PBXGroup;
 			children = (
 				BEBA0CAF1A983663006E4FEA /* BaseClasses */,
 				BEBA0CBC1A983663006E4FEA /* BaseClassesTests */,
+				BEB5966E1AA2D3B00037CB29 /* BaseClassesSDK */,
 				BEBA0CAE1A983663006E4FEA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -168,6 +237,7 @@
 			children = (
 				BEBA0CAD1A983663006E4FEA /* BaseClasses.framework */,
 				BEBA0CB81A983663006E4FEA /* BaseClassesTests.xctest */,
+				BEB5966D1AA2D3B00037CB29 /* BaseClassesSDK.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -251,6 +321,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		BEB596681AA2D3B00037CB29 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB5968C1AA2D40D0037CB29 /* User.h in Headers */,
+				BEB5967E1AA2D3DD0037CB29 /* BaseClasses.h in Headers */,
+				BEB5968F1AA2D4140037CB29 /* ServiceClient.h in Headers */,
+				BEB5968E1AA2D4120037CB29 /* Service.h in Headers */,
+				BEB596881AA2D4000037CB29 /* AuthenticationService.h in Headers */,
+				BEB5968A1AA2D4060037CB29 /* BaseService.h in Headers */,
+				BEB596721AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEBA0CAA1A983663006E4FEA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,6 +351,28 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BEB5966C1AA2D3B00037CB29 /* BaseClassesSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEB5967A1AA2D3B00037CB29 /* Build configuration list for PBXNativeTarget "BaseClassesSDK" */;
+			buildPhases = (
+				BEB596651AA2D3B00037CB29 /* ShellScript */,
+				BEB596661AA2D3B00037CB29 /* Sources */,
+				BEB596671AA2D3B00037CB29 /* Frameworks */,
+				BEB596681AA2D3B00037CB29 /* Headers */,
+				BEB596691AA2D3B00037CB29 /* Resources */,
+				BEB5966A1AA2D3B00037CB29 /* ShellScript */,
+				BEB5966B1AA2D3B00037CB29 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEB5967C1AA2D3C20037CB29 /* PBXTargetDependency */,
+			);
+			name = BaseClassesSDK;
+			productName = BaseClassesSDK;
+			productReference = BEB5966D1AA2D3B00037CB29 /* BaseClassesSDK.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
 		BEBA0CAC1A983663006E4FEA /* BaseClasses */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEBA0CC31A983663006E4FEA /* Build configuration list for PBXNativeTarget "BaseClasses" */;
@@ -315,6 +421,9 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "William Hindenburg";
 				TargetAttributes = {
+					BEB5966C1AA2D3B00037CB29 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 					BEBA0CAC1A983663006E4FEA = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = 5EW7K5N9Y3;
@@ -345,6 +454,7 @@
 			targets = (
 				BEBA0CAC1A983663006E4FEA /* BaseClasses */,
 				BEBA0CB71A983663006E4FEA /* BaseClassesTests */,
+				BEB5966C1AA2D3B00037CB29 /* BaseClassesSDK */,
 			);
 		};
 /* End PBXProject section */
@@ -381,6 +491,14 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BEB596691AA2D3B00037CB29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB596741AA2D3B00037CB29 /* BaseClassesSDK-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEBA0CAB1A983663006E4FEA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -398,6 +516,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		BEB596651AA2D3B00037CB29 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEB5966A1AA2D3B00037CB29 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "HEADERS_ROOT=$SRCROOT/$PRODUCT_NAME\nFRAMEWORK_HEADERS_DIR=\"$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Versions/$FRAMEWORK_VERSION/Headers\"\n\n## only header files expected at this point\nPUBLIC_HEADERS=$(find $FRAMEWORK_HEADERS_DIR/. -not -type d 2> /dev/null | sed -e \"s@.*/@@g\")\n\nFIND_OPTS=\"\"\nfor PUBLIC_HEADER in $PUBLIC_HEADERS; do\n  if [ -n \"$FIND_OPTS\" ]; then\n    FIND_OPTS=\"$FIND_OPTS -o\"\n  fi\n  FIND_OPTS=\"$FIND_OPTS -name '$PUBLIC_HEADER'\"\ndone\n\nif [ -n \"$FIND_OPTS\" ]; then\n  for ORIG_HEADER in $(eval \"find $HEADERS_ROOT/. $FIND_OPTS\" 2> /dev/null | sed -e \"s@^$HEADERS_ROOT/./@@g\"); do\n    PUBLIC_HEADER=$(basename $ORIG_HEADER)\n    RELATIVE_PATH=$(dirname $ORIG_HEADER)\n    if [ -e $FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER ]; then\n      mkdir -p \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH\"\n      mv \"$FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER\" \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH/$PUBLIC_HEADER\"\n    fi\n  done\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BEB5966B1AA2D3B00037CB29 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\n\n# Make sure the other platform gets built\n\necho \"Build other platform\"\n\necho xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n\n\n# Build the fat static library binary\n\necho \"Create universal static library\"\n\necho \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n\"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n\necho mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nmv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n\n\n# Build framework structure\n\necho \"Build symlinks\"\n\necho ln -sfh A \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\nln -sfh A \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Versions/Current\"\necho ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\nln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Headers\"\necho ln -sfh Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\nln -sfh Versions/Current/Resources \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Resources\"\necho ln -sfh \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\nln -sfh \"Versions/Current/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${EXECUTABLE_NAME}\"\n\n\n# Link to binary for unit tests\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework\"\nln -sfh \"../${WRAPPER_NAME}/${EXECUTABLE_NAME}\" \"${BUILT_PRODUCTS_DIR}/.fake_fw_testing.framework/.fake_fw_testing\"\n\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\n# Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n\necho \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n\necho rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nrm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\necho cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\ncp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BEFD75991A9ABE9400C5831E /* Build Universal Framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,6 +575,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BEB596661AA2D3B00037CB29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEB5968B1AA2D4090037CB29 /* BaseService.m in Sources */,
+				BEB596891AA2D4030037CB29 /* AuthenticationService.m in Sources */,
+				BEB596901AA2D4170037CB29 /* ServiceClient.m in Sources */,
+				BEB5968D1AA2D4100037CB29 /* User.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BEBA0CA81A983663006E4FEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -441,6 +612,11 @@
 			name = RestKit;
 			targetProxy = BE5E20231A9A883E003074D9 /* PBXContainerItemProxy */;
 		};
+		BEB5967C1AA2D3C20037CB29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = BEB5967B1AA2D3C20037CB29 /* PBXContainerItemProxy */;
+		};
 		BEBA0CBB1A983663006E4FEA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BEBA0CAC1A983663006E4FEA /* BaseClasses */;
@@ -449,6 +625,74 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		BEB596751AA2D3B00037CB29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					x86_64,
+				);
+				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				DEAD_CODE_STRIPPING = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(CONTENTS_FOLDER_PATH)/Headers",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
+				INFOPLIST_FILE = BaseClassesSDK/Info.plist;
+				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		BEB596761AA2D3B00037CB29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					x86_64,
+				);
+				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
+				DEAD_CODE_STRIPPING = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = (
+					"$(CONTENTS_FOLDER_PATH)/Headers",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
+				INFOPLIST_FILE = BaseClassesSDK/Info.plist;
+				INFOPLIST_PATH = "$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/Info.plist";
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				UNLOCALIZED_RESOURCES_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Resources";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 		BEBA0CC11A983663006E4FEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -623,6 +867,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BEB5967A1AA2D3B00037CB29 /* Build configuration list for PBXNativeTarget "BaseClassesSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEB596751AA2D3B00037CB29 /* Debug */,
+				BEB596761AA2D3B00037CB29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		BEBA0CA71A983663006E4FEA /* Build configuration list for PBXProject "BaseClasses" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
