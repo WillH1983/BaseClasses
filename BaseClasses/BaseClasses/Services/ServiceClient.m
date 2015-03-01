@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 William Hindenburg. All rights reserved.
 //
 
+#import <RestKit/RestKit.h>
 
 #import "ServiceClient.h"
 #import "User.h"
