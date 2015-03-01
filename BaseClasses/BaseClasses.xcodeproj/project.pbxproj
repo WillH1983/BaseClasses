@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BE5E20251A9A884A003074D9 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5E201C1A9A8645003074D9 /* libRestKit.a */; };
+		BE70BECC1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BE70BECB1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch */; };
+		BE70BECD1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BE70BECB1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch */; };
 		BEB596721AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BEB596711AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch */; };
 		BEB596741AA2D3B00037CB29 /* BaseClassesSDK-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEB596731AA2D3B00037CB29 /* BaseClassesSDK-Info.plist */; };
 		BEB5967D1AA2D3D20037CB29 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5E201C1A9A8645003074D9 /* libRestKit.a */; };
@@ -136,6 +138,7 @@
 
 /* Begin PBXFileReference section */
 		BE5E20141A9A8645003074D9 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		BE70BECB1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseClasses-Prefix.pch"; sourceTree = "<group>"; };
 		BEB5966D1AA2D3B00037CB29 /* BaseClassesSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseClassesSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB596701AA2D3B00037CB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEB596711AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseClassesSDK-Prefix.pch"; sourceTree = "<group>"; };
@@ -284,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				BEBA0CB11A983663006E4FEA /* Info.plist */,
+				BE70BECB1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -363,6 +367,7 @@
 			files = (
 				BEB596AD1AA2E9E60037CB29 /* Config.h in Headers */,
 				BEB5968C1AA2D40D0037CB29 /* User.h in Headers */,
+				BE70BECD1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */,
 				BEB5967E1AA2D3DD0037CB29 /* BaseClasses.h in Headers */,
 				BEB596B81AA2EB630037CB29 /* ServiceErrors.h in Headers */,
 				BEB5968F1AA2D4140037CB29 /* ServiceClient.h in Headers */,
@@ -387,6 +392,7 @@
 				BEB596B21AA2EA0E0037CB29 /* BaseModel.h in Headers */,
 				BEBA11A01A98416F006E4FEA /* Service.h in Headers */,
 				BEBA11A61A984201006E4FEA /* User.h in Headers */,
+				BE70BECC1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */,
 				BEB596A61AA2E9AD0037CB29 /* ConfigService.h in Headers */,
 				BEBA11A11A98416F006E4FEA /* ServiceClient.h in Headers */,
 				BEBA119E1A98416F006E4FEA /* BaseService.h in Headers */,
@@ -839,6 +845,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseClasses/BaseClasses-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -866,6 +873,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseClasses/BaseClasses-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
