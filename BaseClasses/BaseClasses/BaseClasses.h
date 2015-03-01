@@ -18,6 +18,9 @@
 #import <BaseClasses/RestKit/RKMapping.h>
 #import <BaseClasses/RestKit/RKMappingResult.h>
 #import <BaseClasses/RestKit/RKObjectMapping.h>
+#import <BaseClasses/RestKit/RKRelationShipMapping.h>
+#import <BaseClasses/RestKit/RKPropertyMapping.h>
+#import <BaseClasses/BaseClasses-Prefix.pch>
 
 
 //! Project version number for BaseClasses.

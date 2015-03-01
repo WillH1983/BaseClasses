@@ -602,6 +602,8 @@
 		BED24C561AA3D97C00926838 /* RKMapping.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 25160D8F145650490060A5C5 /* RKMapping.h */; };
 		BED24C571AA3D99D00926838 /* RKMacros.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 5CCC295515B7124A0045F0F5 /* RKMacros.h */; };
 		BED24C581AA3D9F200926838 /* RKMappingResult.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 25160D94145650490060A5C5 /* RKMappingResult.h */; };
+		BED24C591AA3DBCA00926838 /* RKRelationshipMapping.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 25160D98145650490060A5C5 /* RKRelationshipMapping.h */; };
+		BED24C5A1AA3DBE900926838 /* RKPropertyMapping.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2598888B15EC169E006CAE95 /* RKPropertyMapping.h */; };
 		E2F2B89961FC462B981CEB7A /* libPods-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E457EFC3D502479D8B4FCF2A /* libPods-ios.a */; };
 /* End PBXBuildFile section */
 
@@ -638,6 +640,8 @@
 			dstPath = BaseClasses.framework/Headers/RestKit;
 			dstSubfolderSpec = 16;
 			files = (
+				BED24C5A1AA3DBE900926838 /* RKPropertyMapping.h in Copy Files */,
+				BED24C591AA3DBCA00926838 /* RKRelationshipMapping.h in Copy Files */,
 				BED24C581AA3D9F200926838 /* RKMappingResult.h in Copy Files */,
 				BED24C571AA3D99D00926838 /* RKMacros.h in Copy Files */,
 				BED24C561AA3D97C00926838 /* RKMapping.h in Copy Files */,
