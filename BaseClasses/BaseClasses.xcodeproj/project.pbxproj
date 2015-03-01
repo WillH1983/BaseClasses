@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BE5E20251A9A884A003074D9 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5E201C1A9A8645003074D9 /* libRestKit.a */; };
-		BE70BECC1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BE70BECB1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch */; };
-		BE70BECD1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BE70BECB1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch */; };
+		BE70BECC1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BE70BECB1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE70BECD1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BE70BECB1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEB596721AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BEB596711AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch */; };
 		BEB596741AA2D3B00037CB29 /* BaseClassesSDK-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEB596731AA2D3B00037CB29 /* BaseClassesSDK-Info.plist */; };
 		BEB5967D1AA2D3D20037CB29 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5E201C1A9A8645003074D9 /* libRestKit.a */; };
