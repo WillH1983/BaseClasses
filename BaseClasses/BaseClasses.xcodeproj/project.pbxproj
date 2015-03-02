@@ -70,6 +70,8 @@
 		BEBA11A21A98416F006E4FEA /* ServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA119B1A98416F006E4FEA /* ServiceClient.m */; };
 		BEBA11A61A984201006E4FEA /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11A41A984201006E4FEA /* User.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEBA11A71A984201006E4FEA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11A51A984201006E4FEA /* User.m */; };
+		BED24C5C1AA3DF7600926838 /* RestKitMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = BED24C5B1AA3DF7600926838 /* RestKitMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BED24C5D1AA3DF7600926838 /* RestKitMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = BED24C5B1AA3DF7600926838 /* RestKitMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +177,7 @@
 		BEBA119B1A98416F006E4FEA /* ServiceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceClient.m; sourceTree = "<group>"; };
 		BEBA11A41A984201006E4FEA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		BEBA11A51A984201006E4FEA /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		BED24C5B1AA3DF7600926838 /* RestKitMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestKitMapping.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				BEBA0CB21A983663006E4FEA /* BaseClasses.h */,
+				BED24C5B1AA3DF7600926838 /* RestKitMapping.h */,
 				BEBA11701A983CB1006E4FEA /* Frameworks */,
 				BEBA0CC91A983C34006E4FEA /* Services */,
 				BEBA0CB01A983663006E4FEA /* Supporting Files */,
@@ -375,6 +379,7 @@
 				BEB596881AA2D4000037CB29 /* AuthenticationService.h in Headers */,
 				BEB596A11AA2E9630037CB29 /* ApplicationConfigManager.h in Headers */,
 				BEB596A71AA2E9AD0037CB29 /* ConfigService.h in Headers */,
+				BED24C5D1AA3DF7600926838 /* RestKitMapping.h in Headers */,
 				BEB5968A1AA2D4060037CB29 /* BaseService.h in Headers */,
 				BEB596721AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch in Headers */,
 				BEB596B31AA2EA0E0037CB29 /* BaseModel.h in Headers */,
@@ -386,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEB596AC1AA2E9E60037CB29 /* Config.h in Headers */,
+				BED24C5C1AA3DF7600926838 /* RestKitMapping.h in Headers */,
 				BEB596B71AA2EB630037CB29 /* ServiceErrors.h in Headers */,
 				BEBA119C1A98416F006E4FEA /* AuthenticationService.h in Headers */,
 				BEB596A01AA2E9630037CB29 /* ApplicationConfigManager.h in Headers */,
