@@ -120,6 +120,22 @@ NSString* const ServiceErrorDomain = @"com.Services.BaseClasses";
     
 }
 
+- (void)performMappingOnObject:(id)object withService:(id<Service>)service withSuccessBlock:(void (^)(RKMappingResult *result))successBlock andError:(void (^)(NSError *error))errorBlock {
+    [self checkForLifeErrorCodesWithSuccess:^{
+        RKMapperOperation *mapper = [[[RKMapperOperation alloc] init] initWithRepresentation:object mappingsDictionary:@{[service rootKeyPath] : [service mappingProvider] }];
+        NSError *mappingError = nil;
+        [mapper execute:&mappingError];
+        if (mappingError == nil) {
+            if (successBlock) successBlock(mapper.mappingResult);
+        } else {
+            if (errorBlock) errorBlock(mappingError);
+        }
+    } andError:^(NSError *error) {
+        if (errorBlock) errorBlock(error);
+    }];
+    
+}
+
 - (Class)getSerializationObjectClassForService:(id<Service>)service {
     
     if ([service respondsToSelector:@selector(serializedMappingProvider)]) {
