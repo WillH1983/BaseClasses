@@ -72,6 +72,8 @@
 		BEBA11A71A984201006E4FEA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11A51A984201006E4FEA /* User.m */; };
 		BED24C5C1AA3DF7600926838 /* RestKitMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = BED24C5B1AA3DF7600926838 /* RestKitMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BED24C5D1AA3DF7600926838 /* RestKitMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = BED24C5B1AA3DF7600926838 /* RestKitMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BED338DE1AD237BD008781F2 /* BaseTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BED338DC1AD237BD008781F2 /* BaseTableViewController.h */; };
+		BED338DF1AD237BD008781F2 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED338DD1AD237BD008781F2 /* BaseTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +180,8 @@
 		BEBA11A41A984201006E4FEA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		BEBA11A51A984201006E4FEA /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		BED24C5B1AA3DF7600926838 /* RestKitMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestKitMapping.h; sourceTree = "<group>"; };
+		BED338DC1AD237BD008781F2 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		BED338DD1AD237BD008781F2 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +327,7 @@
 				BEBA11981A98416F006E4FEA /* BaseService.m */,
 				BEB596A41AA2E9AD0037CB29 /* ConfigService.h */,
 				BEB596A51AA2E9AD0037CB29 /* ConfigService.m */,
+				BED338DB1AD236D4008781F2 /* Controllers */,
 				BEBA11A31A984201006E4FEA /* Models */,
 				BEBA11991A98416F006E4FEA /* Service.h */,
 				BEBA119A1A98416F006E4FEA /* ServiceClient.h */,
@@ -362,6 +367,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		BED338DB1AD236D4008781F2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BED338DC1AD237BD008781F2 /* BaseTableViewController.h */,
+				BED338DD1AD237BD008781F2 /* BaseTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -399,6 +413,7 @@
 				BEB596A61AA2E9AD0037CB29 /* ConfigService.h in Headers */,
 				BEBA0CB31A983663006E4FEA /* BaseClasses.h in Headers */,
 				BEBA11A01A98416F006E4FEA /* Service.h in Headers */,
+				BED338DE1AD237BD008781F2 /* BaseTableViewController.h in Headers */,
 				BEBA11A61A984201006E4FEA /* User.h in Headers */,
 				BE70BECC1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */,
 				BEBA11A11A98416F006E4FEA /* ServiceClient.h in Headers */,
@@ -655,6 +670,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEB596AE1AA2E9E60037CB29 /* Config.m in Sources */,
+				BED338DF1AD237BD008781F2 /* BaseTableViewController.m in Sources */,
 				BEBA11A71A984201006E4FEA /* User.m in Sources */,
 				BEB596B41AA2EA0E0037CB29 /* BaseModel.m in Sources */,
 				BEB596A21AA2E9630037CB29 /* ApplicationConfigManager.m in Sources */,
