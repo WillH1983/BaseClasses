@@ -15,6 +15,7 @@
 #import <BaseClasses/ServiceClient.h>
 #import <BaseClasses/User.h>
 #import <BaseClasses/RestKitMapping.h>
+#import <BaseClasses/BaseTableViewController.h>
 #import <BaseClasses/BaseClasses-Prefix.pch>
 
 
