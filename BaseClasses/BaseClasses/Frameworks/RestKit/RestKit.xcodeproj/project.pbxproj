@@ -598,12 +598,6 @@
 		7F9CBC6174004E31AEC35813 /* libPods-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EC453810D648768BF62304 /* libPods-osx.a */; };
 		BE05BDD11782109F00F7C9C9 /* RKRouteTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05BDCF1782109F00F7C9C9 /* RKRouteTest.m */; };
 		BE05BDD2178214AA00F7C9C9 /* RKRouteTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05BDCF1782109F00F7C9C9 /* RKRouteTest.m */; };
-		BED24C551AA3D97600926838 /* RKObjectMapping.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 25160D8D145650490060A5C5 /* RKObjectMapping.h */; };
-		BED24C561AA3D97C00926838 /* RKMapping.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 25160D8F145650490060A5C5 /* RKMapping.h */; };
-		BED24C571AA3D99D00926838 /* RKMacros.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 5CCC295515B7124A0045F0F5 /* RKMacros.h */; };
-		BED24C581AA3D9F200926838 /* RKMappingResult.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 25160D94145650490060A5C5 /* RKMappingResult.h */; };
-		BED24C591AA3DBCA00926838 /* RKRelationshipMapping.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 25160D98145650490060A5C5 /* RKRelationshipMapping.h */; };
-		BED24C5A1AA3DBE900926838 /* RKPropertyMapping.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 2598888B15EC169E006CAE95 /* RKPropertyMapping.h */; };
 		E2F2B89961FC462B981CEB7A /* libPods-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E457EFC3D502479D8B4FCF2A /* libPods-ios.a */; };
 /* End PBXBuildFile section */
 
@@ -632,22 +626,6 @@
 			dstSubfolderSpec = 16;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BEA20B981A9AA0820026EEDD /* Copy Files */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = BaseClasses.framework/Headers/RestKit;
-			dstSubfolderSpec = 16;
-			files = (
-				BED24C5A1AA3DBE900926838 /* RKPropertyMapping.h in Copy Files */,
-				BED24C591AA3DBCA00926838 /* RKRelationshipMapping.h in Copy Files */,
-				BED24C581AA3D9F200926838 /* RKMappingResult.h in Copy Files */,
-				BED24C571AA3D99D00926838 /* RKMacros.h in Copy Files */,
-				BED24C561AA3D97C00926838 /* RKMapping.h in Copy Files */,
-				BED24C551AA3D97600926838 /* RKObjectMapping.h in Copy Files */,
-			);
-			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -1988,7 +1966,6 @@
 				25160D1214564E810060A5C5 /* Sources */,
 				25160D1314564E810060A5C5 /* Frameworks */,
 				25160D1414564E810060A5C5 /* Headers */,
-				BEA20B981A9AA0820026EEDD /* Copy Files */,
 			);
 			buildRules = (
 			);

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE46C4BE1AD620A9001738C3 /* RKPropertyMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = BE46C4BD1AD620A9001738C3 /* RKPropertyMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE46C4C01AD620D3001738C3 /* RKRelationshipMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = BE46C4BF1AD620D3001738C3 /* RKRelationshipMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE46C4C21AD620FF001738C3 /* RKMappingResult.h in Headers */ = {isa = PBXBuildFile; fileRef = BE46C4C11AD620FF001738C3 /* RKMappingResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE46C4C41AD62114001738C3 /* RKMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BE46C4C31AD62114001738C3 /* RKMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE46C4C61AD6212C001738C3 /* RKMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = BE46C4C51AD6212C001738C3 /* RKMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE46C4C81AD6213D001738C3 /* RKObjectMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = BE46C4C71AD6213D001738C3 /* RKObjectMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE5E20251A9A884A003074D9 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5E201C1A9A8645003074D9 /* libRestKit.a */; };
 		BE70BECC1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BE70BECB1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE70BECD1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BE70BECB1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -72,7 +78,7 @@
 		BEBA11A71A984201006E4FEA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11A51A984201006E4FEA /* User.m */; };
 		BED24C5C1AA3DF7600926838 /* RestKitMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = BED24C5B1AA3DF7600926838 /* RestKitMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BED24C5D1AA3DF7600926838 /* RestKitMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = BED24C5B1AA3DF7600926838 /* RestKitMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BED338DE1AD237BD008781F2 /* BaseTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BED338DC1AD237BD008781F2 /* BaseTableViewController.h */; };
+		BED338DE1AD237BD008781F2 /* BaseTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BED338DC1AD237BD008781F2 /* BaseTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BED338DF1AD237BD008781F2 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED338DD1AD237BD008781F2 /* BaseTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +147,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BE46C4BD1AD620A9001738C3 /* RKPropertyMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKPropertyMapping.h; path = BaseClasses/Frameworks/RestKit/Code/ObjectMapping/RKPropertyMapping.h; sourceTree = SOURCE_ROOT; };
+		BE46C4BF1AD620D3001738C3 /* RKRelationshipMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKRelationshipMapping.h; path = BaseClasses/Frameworks/RestKit/Code/ObjectMapping/RKRelationshipMapping.h; sourceTree = SOURCE_ROOT; };
+		BE46C4C11AD620FF001738C3 /* RKMappingResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMappingResult.h; path = BaseClasses/Frameworks/RestKit/Code/ObjectMapping/RKMappingResult.h; sourceTree = SOURCE_ROOT; };
+		BE46C4C31AD62114001738C3 /* RKMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMacros.h; path = BaseClasses/Frameworks/RestKit/Code/Support/RKMacros.h; sourceTree = SOURCE_ROOT; };
+		BE46C4C51AD6212C001738C3 /* RKMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKMapping.h; path = BaseClasses/Frameworks/RestKit/Code/ObjectMapping/RKMapping.h; sourceTree = SOURCE_ROOT; };
+		BE46C4C71AD6213D001738C3 /* RKObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKObjectMapping.h; path = BaseClasses/Frameworks/RestKit/Code/ObjectMapping/RKObjectMapping.h; sourceTree = SOURCE_ROOT; };
 		BE5E20141A9A8645003074D9 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
 		BE70BECB1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseClasses-Prefix.pch"; sourceTree = "<group>"; };
 		BEB5966D1AA2D3B00037CB29 /* BaseClassesSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseClassesSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,6 +242,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE46C4B91AD6206F001738C3 /* RestKit References */ = {
+			isa = PBXGroup;
+			children = (
+				BE46C4C31AD62114001738C3 /* RKMacros.h */,
+				BE46C4C51AD6212C001738C3 /* RKMapping.h */,
+				BE46C4C11AD620FF001738C3 /* RKMappingResult.h */,
+				BE46C4C71AD6213D001738C3 /* RKObjectMapping.h */,
+				BE46C4BD1AD620A9001738C3 /* RKPropertyMapping.h */,
+				BE46C4BF1AD620D3001738C3 /* RKRelationshipMapping.h */,
+			);
+			path = "RestKit References";
+			sourceTree = "<group>";
+		};
 		BE5E20151A9A8645003074D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,8 +308,9 @@
 			isa = PBXGroup;
 			children = (
 				BEBA0CB21A983663006E4FEA /* BaseClasses.h */,
-				BED24C5B1AA3DF7600926838 /* RestKitMapping.h */,
 				BEBA11701A983CB1006E4FEA /* Frameworks */,
+				BE46C4B91AD6206F001738C3 /* RestKit References */,
+				BED24C5B1AA3DF7600926838 /* RestKitMapping.h */,
 				BEBA0CC91A983C34006E4FEA /* Services */,
 				BEBA0CB01A983663006E4FEA /* Supporting Files */,
 			);
@@ -413,7 +439,13 @@
 				BEB596A61AA2E9AD0037CB29 /* ConfigService.h in Headers */,
 				BEBA0CB31A983663006E4FEA /* BaseClasses.h in Headers */,
 				BEBA11A01A98416F006E4FEA /* Service.h in Headers */,
+				BE46C4C61AD6212C001738C3 /* RKMapping.h in Headers */,
+				BE46C4C41AD62114001738C3 /* RKMacros.h in Headers */,
+				BE46C4BE1AD620A9001738C3 /* RKPropertyMapping.h in Headers */,
+				BE46C4C01AD620D3001738C3 /* RKRelationshipMapping.h in Headers */,
 				BED338DE1AD237BD008781F2 /* BaseTableViewController.h in Headers */,
+				BE46C4C81AD6213D001738C3 /* RKObjectMapping.h in Headers */,
+				BE46C4C21AD620FF001738C3 /* RKMappingResult.h in Headers */,
 				BEBA11A61A984201006E4FEA /* User.h in Headers */,
 				BE70BECC1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */,
 				BEBA11A11A98416F006E4FEA /* ServiceClient.h in Headers */,

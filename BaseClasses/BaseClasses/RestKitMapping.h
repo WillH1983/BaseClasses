@@ -9,11 +9,11 @@
 #ifndef BaseClasses_RestKitMapping_h
 #define BaseClasses_RestKitMapping_h
 
-#import <BaseClasses/RestKit/RKMacros.h>
-#import <BaseClasses/RestKit/RKMapping.h>
-#import <BaseClasses/RestKit/RKMappingResult.h>
-#import <BaseClasses/RestKit/RKObjectMapping.h>
-#import <BaseClasses/RestKit/RKRelationShipMapping.h>
-#import <BaseClasses/RestKit/RKPropertyMapping.h>
+#import <BaseClasses/RKMacros.h>
+#import <BaseClasses/RKMapping.h>
+#import <BaseClasses/RKMappingResult.h>
+#import <BaseClasses/RKObjectMapping.h>
+#import <BaseClasses/RKRelationShipMapping.h>
+#import <BaseClasses/RKPropertyMapping.h>
 
 #endif
