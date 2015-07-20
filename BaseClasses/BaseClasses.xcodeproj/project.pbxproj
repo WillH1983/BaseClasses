@@ -16,6 +16,7 @@
 		BE5E20251A9A884A003074D9 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5E201C1A9A8645003074D9 /* libRestKit.a */; };
 		BE70BECC1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BE70BECB1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE70BECD1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BE70BECB1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEA720F91B5C3393004F97C4 /* ApplicationConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA720F81B5C3393004F97C4 /* ApplicationConfigManager.swift */; };
 		BEB596721AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BEB596711AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch */; };
 		BEB596741AA2D3B00037CB29 /* BaseClassesSDK-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEB596731AA2D3B00037CB29 /* BaseClassesSDK-Info.plist */; };
 		BEB5967D1AA2D3D20037CB29 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5E201C1A9A8645003074D9 /* libRestKit.a */; };
@@ -38,10 +39,6 @@
 		BEB5968E1AA2D4120037CB29 /* Service.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11991A98416F006E4FEA /* Service.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEB5968F1AA2D4140037CB29 /* ServiceClient.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA119A1A98416F006E4FEA /* ServiceClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEB596901AA2D4170037CB29 /* ServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA119B1A98416F006E4FEA /* ServiceClient.m */; };
-		BEB596A01AA2E9630037CB29 /* ApplicationConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB5969E1AA2E9630037CB29 /* ApplicationConfigManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEB596A11AA2E9630037CB29 /* ApplicationConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB5969E1AA2E9630037CB29 /* ApplicationConfigManager.h */; };
-		BEB596A21AA2E9630037CB29 /* ApplicationConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB5969F1AA2E9630037CB29 /* ApplicationConfigManager.m */; };
-		BEB596A31AA2E9630037CB29 /* ApplicationConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB5969F1AA2E9630037CB29 /* ApplicationConfigManager.m */; };
 		BEB596A61AA2E9AD0037CB29 /* ConfigService.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB596A41AA2E9AD0037CB29 /* ConfigService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEB596A71AA2E9AD0037CB29 /* ConfigService.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB596A41AA2E9AD0037CB29 /* ConfigService.h */; };
 		BEB596A81AA2E9AD0037CB29 /* ConfigService.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB596A51AA2E9AD0037CB29 /* ConfigService.m */; };
@@ -155,12 +152,11 @@
 		BE46C4C71AD6213D001738C3 /* RKObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKObjectMapping.h; path = BaseClasses/Frameworks/RestKit/Code/ObjectMapping/RKObjectMapping.h; sourceTree = SOURCE_ROOT; };
 		BE5E20141A9A8645003074D9 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
 		BE70BECB1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseClasses-Prefix.pch"; sourceTree = "<group>"; };
+		BEA720F81B5C3393004F97C4 /* ApplicationConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationConfigManager.swift; sourceTree = "<group>"; };
 		BEB5966D1AA2D3B00037CB29 /* BaseClassesSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseClassesSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB596701AA2D3B00037CB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEB596711AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseClassesSDK-Prefix.pch"; sourceTree = "<group>"; };
 		BEB596731AA2D3B00037CB29 /* BaseClassesSDK-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BaseClassesSDK-Info.plist"; sourceTree = "<group>"; };
-		BEB5969E1AA2E9630037CB29 /* ApplicationConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationConfigManager.h; sourceTree = "<group>"; };
-		BEB5969F1AA2E9630037CB29 /* ApplicationConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationConfigManager.m; sourceTree = "<group>"; };
 		BEB596A41AA2E9AD0037CB29 /* ConfigService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigService.h; sourceTree = "<group>"; };
 		BEB596A51AA2E9AD0037CB29 /* ConfigService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigService.m; sourceTree = "<group>"; };
 		BEB596AA1AA2E9E60037CB29 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
@@ -345,8 +341,7 @@
 		BEBA0CC91A983C34006E4FEA /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				BEB5969E1AA2E9630037CB29 /* ApplicationConfigManager.h */,
-				BEB5969F1AA2E9630037CB29 /* ApplicationConfigManager.m */,
+				BEA720F81B5C3393004F97C4 /* ApplicationConfigManager.swift */,
 				BEBA11951A98416F006E4FEA /* AuthenticationService.h */,
 				BEBA11961A98416F006E4FEA /* AuthenticationService.m */,
 				BEBA11971A98416F006E4FEA /* BaseService.h */,
@@ -417,7 +412,6 @@
 				BEB5968F1AA2D4140037CB29 /* ServiceClient.h in Headers */,
 				BEB5968E1AA2D4120037CB29 /* Service.h in Headers */,
 				BEB596881AA2D4000037CB29 /* AuthenticationService.h in Headers */,
-				BEB596A11AA2E9630037CB29 /* ApplicationConfigManager.h in Headers */,
 				BEB596A71AA2E9AD0037CB29 /* ConfigService.h in Headers */,
 				BED24C5D1AA3DF7600926838 /* RestKitMapping.h in Headers */,
 				BEB5968A1AA2D4060037CB29 /* BaseService.h in Headers */,
@@ -434,7 +428,6 @@
 				BED24C5C1AA3DF7600926838 /* RestKitMapping.h in Headers */,
 				BEB596B71AA2EB630037CB29 /* ServiceErrors.h in Headers */,
 				BEBA119C1A98416F006E4FEA /* AuthenticationService.h in Headers */,
-				BEB596A01AA2E9630037CB29 /* ApplicationConfigManager.h in Headers */,
 				BEB596B21AA2EA0E0037CB29 /* BaseModel.h in Headers */,
 				BEB596A61AA2E9AD0037CB29 /* ConfigService.h in Headers */,
 				BEBA0CB31A983663006E4FEA /* BaseClasses.h in Headers */,
@@ -523,6 +516,7 @@
 		BEBA0CA41A983663006E4FEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "William Hindenburg";
 				TargetAttributes = {
@@ -689,7 +683,6 @@
 				BEB596AF1AA2E9E60037CB29 /* Config.m in Sources */,
 				BEB5968B1AA2D4090037CB29 /* BaseService.m in Sources */,
 				BEB596B51AA2EA0E0037CB29 /* BaseModel.m in Sources */,
-				BEB596A31AA2E9630037CB29 /* ApplicationConfigManager.m in Sources */,
 				BEB596891AA2D4030037CB29 /* AuthenticationService.m in Sources */,
 				BEB596A91AA2E9AD0037CB29 /* ConfigService.m in Sources */,
 				BEB596901AA2D4170037CB29 /* ServiceClient.m in Sources */,
@@ -703,9 +696,9 @@
 			files = (
 				BEB596AE1AA2E9E60037CB29 /* Config.m in Sources */,
 				BED338DF1AD237BD008781F2 /* BaseTableViewController.m in Sources */,
+				BEA720F91B5C3393004F97C4 /* ApplicationConfigManager.swift in Sources */,
 				BEBA11A71A984201006E4FEA /* User.m in Sources */,
 				BEB596B41AA2EA0E0037CB29 /* BaseModel.m in Sources */,
-				BEB596A21AA2E9630037CB29 /* ApplicationConfigManager.m in Sources */,
 				BEBA119F1A98416F006E4FEA /* BaseService.m in Sources */,
 				BEB596A81AA2E9AD0037CB29 /* ConfigService.m in Sources */,
 				BEBA11A21A98416F006E4FEA /* ServiceClient.m in Sources */,
@@ -888,11 +881,13 @@
 		BEBA0CC41A983663006E4FEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: William Hindenburg (5EW7K5N9Y3)";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseClasses/BaseClasses-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -917,11 +912,13 @@
 		BEBA0CC51A983663006E4FEA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: William Hindenburg (5EW7K5N9Y3)";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseClasses/BaseClasses-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

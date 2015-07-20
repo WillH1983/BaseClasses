@@ -12,5 +12,5 @@
 #import "BaseService.h"
 
 @interface ConfigService : BaseService <Service>
-- (void)loadConfigDataWithSuccessBlock:(void (^)(Config *data))successBlock andError:(void (^)(NSError *error))errorBlock;
+- (void)loadConfigDataWithSuccessBlock:(void (^ __nullable)(Config * __nonnull data))successBlock andError:(void (^ __nullable)(NSError * __nonnull error))errorBlock;
 @end

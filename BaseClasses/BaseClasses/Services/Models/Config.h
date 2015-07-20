@@ -9,7 +9,9 @@
 #import "BaseModel.h"
 
 @interface Config : BaseModel
-@property (strong, nonatomic) NSDictionary *MaintenanceMode;
-@property (strong, nonatomic) NSNumber *configRefreshIntervalSeconds;
-@property (strong, nonatomic) NSDictionary *forceUpgrade;
+@property (strong, nonatomic, nullable) NSDictionary *MaintenanceMode;
+@property (strong, nonatomic, nullable) NSNumber *configRefreshIntervalSeconds;
+
+//TODO: This should be an integer
+@property (strong, nonatomic, nullable) NSDictionary *forceUpgrade;
 @end

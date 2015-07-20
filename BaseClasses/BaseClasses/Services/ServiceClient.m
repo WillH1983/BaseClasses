@@ -10,8 +10,8 @@
 
 #import "ServiceClient.h"
 #import "User.h"
-#import "ApplicationConfigManager.h"
 #import "ServiceErrors.h"
+#import <BaseClasses/BaseClasses-Swift.h>
 
 NSString* const ServiceErrorDomain = @"com.Services.BaseClasses";
 
