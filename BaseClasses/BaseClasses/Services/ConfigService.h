@@ -6,12 +6,10 @@
 //  Copyright (c) 2015 William Hindenburg. All rights reserved.
 //
 
-@protocol Service;
-
 #import <Foundation/Foundation.h>
 #import "Config.h"
 #import "BaseService.h"
 
-@interface ConfigService : BaseService <Service>
+@interface ConfigService : BaseService
 - (void)loadConfigDataWithSuccessBlock:(void (^ __nullable)(Config * __nonnull data))successBlock andError:(void (^ __nullable)(NSError * __nonnull error))errorBlock;
 @end

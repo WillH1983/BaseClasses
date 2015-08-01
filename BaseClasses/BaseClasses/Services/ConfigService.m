@@ -11,6 +11,9 @@
 #import "Config.h"
 #import "RestKitMapping.h"
 
+@interface ConfigService() <Service>
+@end
+
 @implementation ConfigService
 
 - (void)loadConfigDataWithSuccessBlock:(void (^ __nullable)(Config * __nonnull data))successBlock andError:(void (^ __nullable)(NSError * __nonnull error))errorBlock {
