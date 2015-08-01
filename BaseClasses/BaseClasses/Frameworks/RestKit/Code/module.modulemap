@@ -1,0 +1,4 @@
+module RestKit {
+    header "RestKit.h"
+    export *
+}

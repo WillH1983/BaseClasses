@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RestKit
 
 @objc public class AuthenticationService: NSObject, Service {
     private var params = [String: String]()

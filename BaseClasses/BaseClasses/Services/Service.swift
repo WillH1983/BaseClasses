@@ -6,7 +6,9 @@
 //  Copyright © 2015 William Hindenburg. All rights reserved.
 //
 
-@objc public protocol Service {
+import RestKit
+
+@objc public protocol Service: NSObjectProtocol {
     
     /**
     @brief This methoded is called to get the URL path.  This URL is appended to the base URL.

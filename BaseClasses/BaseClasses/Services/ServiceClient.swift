@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RestKit
 
 @objc public class ServiceClient: NSObject, Service {
     let ServiceErrorDomain = "com.Services.BaseClasses"
@@ -53,8 +54,9 @@ import UIKit
             }
     }
     
-    private func objectManagerForService(service:Service) -> AnyObject? {
-        return nil
+    private func objectManagerForService(service:Service) -> RKObjectManager {
+        let objectManager = RKObjectManager(baseURL: nil)
+        return objectManager;
 //        RKObjectManager *objectManager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:[service baseURL]]];
 //        [objectManager setAcceptHeaderWithMIMEType:@"*/*"];
 //        [objectManager setRequestSerializationMIMEType:RKMIMETypeJSON];
