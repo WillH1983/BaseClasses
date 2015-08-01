@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <BaseClasses/Config.h>
 #import <BaseClasses/ServiceErrors.h>
-#import <BaseClasses/AuthenticationService.h>
 #import <BaseClasses/ConfigService.h>
-#import <BaseClasses/ServiceClient.h>
 #import <BaseClasses/User.h>
 #import <BaseClasses/RestKitMapping.h>
 #import <BaseClasses/BaseTableViewController.h>

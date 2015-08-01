@@ -6,11 +6,10 @@
 //  Copyright (c) 2015 William Hindenburg. All rights reserved.
 //
 
-#import <RestKit/RestKit.h>
-
+#import <BaseClasses/BaseClasses-Swift.h>
 #import "ConfigService.h"
-#import "ServiceClient.h"
 #import "Config.h"
+#import "RestKitMapping.h"
 
 @implementation ConfigService
 

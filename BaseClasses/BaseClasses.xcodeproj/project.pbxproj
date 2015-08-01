@@ -16,7 +16,11 @@
 		BE5E20251A9A884A003074D9 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5E201C1A9A8645003074D9 /* libRestKit.a */; };
 		BE70BECC1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BE70BECB1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE70BECD1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BE70BECB1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE9087D01B6B2B3F00679229 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9087CF1B6B2B3F00679229 /* AuthenticationService.swift */; };
+		BE9087D51B6B447A00679229 /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9087D41B6B447A00679229 /* ServiceClient.swift */; };
 		BEA720F91B5C3393004F97C4 /* ApplicationConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA720F81B5C3393004F97C4 /* ApplicationConfigManager.swift */; };
+		BEAD9CCB1B6C5C1600ECB512 /* RKObjectManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BEAD9CCA1B6C5C1600ECB512 /* RKObjectManager.h */; };
+		BEAD9CE31B6C72B200ECB512 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD9CE21B6C72B200ECB512 /* Service.swift */; };
 		BEB596721AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = BEB596711AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch */; };
 		BEB596741AA2D3B00037CB29 /* BaseClassesSDK-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEB596731AA2D3B00037CB29 /* BaseClassesSDK-Info.plist */; };
 		BEB5967D1AA2D3D20037CB29 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5E201C1A9A8645003074D9 /* libRestKit.a */; };
@@ -30,15 +34,10 @@
 		BEB596851AA2D3F10037CB29 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11891A983E71006E4FEA /* Security.framework */; };
 		BEB596861AA2D3F50037CB29 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11931A983F3C006E4FEA /* SystemConfiguration.framework */; };
 		BEB596871AA2D3F90037CB29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11911A983F14006E4FEA /* UIKit.framework */; };
-		BEB596881AA2D4000037CB29 /* AuthenticationService.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11951A98416F006E4FEA /* AuthenticationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEB596891AA2D4030037CB29 /* AuthenticationService.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11961A98416F006E4FEA /* AuthenticationService.m */; };
 		BEB5968A1AA2D4060037CB29 /* BaseService.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11971A98416F006E4FEA /* BaseService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEB5968B1AA2D4090037CB29 /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11981A98416F006E4FEA /* BaseService.m */; };
 		BEB5968C1AA2D40D0037CB29 /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11A41A984201006E4FEA /* User.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEB5968D1AA2D4100037CB29 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11A51A984201006E4FEA /* User.m */; };
-		BEB5968E1AA2D4120037CB29 /* Service.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11991A98416F006E4FEA /* Service.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEB5968F1AA2D4140037CB29 /* ServiceClient.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA119A1A98416F006E4FEA /* ServiceClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEB596901AA2D4170037CB29 /* ServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA119B1A98416F006E4FEA /* ServiceClient.m */; };
 		BEB596A61AA2E9AD0037CB29 /* ConfigService.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB596A41AA2E9AD0037CB29 /* ConfigService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEB596A71AA2E9AD0037CB29 /* ConfigService.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB596A41AA2E9AD0037CB29 /* ConfigService.h */; };
 		BEB596A81AA2E9AD0037CB29 /* ConfigService.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB596A51AA2E9AD0037CB29 /* ConfigService.m */; };
@@ -64,13 +63,8 @@
 		BEBA11901A983EEC006E4FEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA118F1A983EEC006E4FEA /* Foundation.framework */; };
 		BEBA11921A983F14006E4FEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11911A983F14006E4FEA /* UIKit.framework */; };
 		BEBA11941A983F3C006E4FEA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11931A983F3C006E4FEA /* SystemConfiguration.framework */; };
-		BEBA119C1A98416F006E4FEA /* AuthenticationService.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11951A98416F006E4FEA /* AuthenticationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEBA119D1A98416F006E4FEA /* AuthenticationService.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11961A98416F006E4FEA /* AuthenticationService.m */; };
 		BEBA119E1A98416F006E4FEA /* BaseService.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11971A98416F006E4FEA /* BaseService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEBA119F1A98416F006E4FEA /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11981A98416F006E4FEA /* BaseService.m */; };
-		BEBA11A01A98416F006E4FEA /* Service.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11991A98416F006E4FEA /* Service.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEBA11A11A98416F006E4FEA /* ServiceClient.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA119A1A98416F006E4FEA /* ServiceClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEBA11A21A98416F006E4FEA /* ServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA119B1A98416F006E4FEA /* ServiceClient.m */; };
 		BEBA11A61A984201006E4FEA /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11A41A984201006E4FEA /* User.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEBA11A71A984201006E4FEA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11A51A984201006E4FEA /* User.m */; };
 		BED24C5C1AA3DF7600926838 /* RestKitMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = BED24C5B1AA3DF7600926838 /* RestKitMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -152,7 +146,11 @@
 		BE46C4C71AD6213D001738C3 /* RKObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKObjectMapping.h; path = BaseClasses/Frameworks/RestKit/Code/ObjectMapping/RKObjectMapping.h; sourceTree = SOURCE_ROOT; };
 		BE5E20141A9A8645003074D9 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
 		BE70BECB1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseClasses-Prefix.pch"; sourceTree = "<group>"; };
+		BE9087CF1B6B2B3F00679229 /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		BE9087D41B6B447A00679229 /* ServiceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
 		BEA720F81B5C3393004F97C4 /* ApplicationConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationConfigManager.swift; sourceTree = "<group>"; };
+		BEAD9CCA1B6C5C1600ECB512 /* RKObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKObjectManager.h; path = ../Frameworks/RestKit/Code/Network/RKObjectManager.h; sourceTree = "<group>"; };
+		BEAD9CE21B6C72B200ECB512 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		BEB5966D1AA2D3B00037CB29 /* BaseClassesSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseClassesSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB596701AA2D3B00037CB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEB596711AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseClassesSDK-Prefix.pch"; sourceTree = "<group>"; };
@@ -178,13 +176,8 @@
 		BEBA118F1A983EEC006E4FEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BEBA11911A983F14006E4FEA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BEBA11931A983F3C006E4FEA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		BEBA11951A98416F006E4FEA /* AuthenticationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationService.h; sourceTree = "<group>"; };
-		BEBA11961A98416F006E4FEA /* AuthenticationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationService.m; sourceTree = "<group>"; };
 		BEBA11971A98416F006E4FEA /* BaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseService.h; sourceTree = "<group>"; };
 		BEBA11981A98416F006E4FEA /* BaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseService.m; sourceTree = "<group>"; };
-		BEBA11991A98416F006E4FEA /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
-		BEBA119A1A98416F006E4FEA /* ServiceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceClient.h; sourceTree = "<group>"; };
-		BEBA119B1A98416F006E4FEA /* ServiceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceClient.m; sourceTree = "<group>"; };
 		BEBA11A41A984201006E4FEA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		BEBA11A51A984201006E4FEA /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		BED24C5B1AA3DF7600926838 /* RestKitMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestKitMapping.h; sourceTree = "<group>"; };
@@ -245,6 +238,7 @@
 				BE46C4C51AD6212C001738C3 /* RKMapping.h */,
 				BE46C4C11AD620FF001738C3 /* RKMappingResult.h */,
 				BE46C4C71AD6213D001738C3 /* RKObjectMapping.h */,
+				BEAD9CCA1B6C5C1600ECB512 /* RKObjectManager.h */,
 				BE46C4BD1AD620A9001738C3 /* RKPropertyMapping.h */,
 				BE46C4BF1AD620D3001738C3 /* RKRelationshipMapping.h */,
 			);
@@ -342,17 +336,15 @@
 			isa = PBXGroup;
 			children = (
 				BEA720F81B5C3393004F97C4 /* ApplicationConfigManager.swift */,
-				BEBA11951A98416F006E4FEA /* AuthenticationService.h */,
-				BEBA11961A98416F006E4FEA /* AuthenticationService.m */,
+				BE9087CF1B6B2B3F00679229 /* AuthenticationService.swift */,
 				BEBA11971A98416F006E4FEA /* BaseService.h */,
 				BEBA11981A98416F006E4FEA /* BaseService.m */,
 				BEB596A41AA2E9AD0037CB29 /* ConfigService.h */,
 				BEB596A51AA2E9AD0037CB29 /* ConfigService.m */,
 				BED338DB1AD236D4008781F2 /* Controllers */,
 				BEBA11A31A984201006E4FEA /* Models */,
-				BEBA11991A98416F006E4FEA /* Service.h */,
-				BEBA119A1A98416F006E4FEA /* ServiceClient.h */,
-				BEBA119B1A98416F006E4FEA /* ServiceClient.m */,
+				BEAD9CE21B6C72B200ECB512 /* Service.swift */,
+				BE9087D41B6B447A00679229 /* ServiceClient.swift */,
 				BEB596B61AA2EB630037CB29 /* ServiceErrors.h */,
 			);
 			path = Services;
@@ -409,9 +401,6 @@
 				BE70BECD1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */,
 				BEB5967E1AA2D3DD0037CB29 /* BaseClasses.h in Headers */,
 				BEB596B81AA2EB630037CB29 /* ServiceErrors.h in Headers */,
-				BEB5968F1AA2D4140037CB29 /* ServiceClient.h in Headers */,
-				BEB5968E1AA2D4120037CB29 /* Service.h in Headers */,
-				BEB596881AA2D4000037CB29 /* AuthenticationService.h in Headers */,
 				BEB596A71AA2E9AD0037CB29 /* ConfigService.h in Headers */,
 				BED24C5D1AA3DF7600926838 /* RestKitMapping.h in Headers */,
 				BEB5968A1AA2D4060037CB29 /* BaseService.h in Headers */,
@@ -427,11 +416,9 @@
 				BEB596AC1AA2E9E60037CB29 /* Config.h in Headers */,
 				BED24C5C1AA3DF7600926838 /* RestKitMapping.h in Headers */,
 				BEB596B71AA2EB630037CB29 /* ServiceErrors.h in Headers */,
-				BEBA119C1A98416F006E4FEA /* AuthenticationService.h in Headers */,
 				BEB596B21AA2EA0E0037CB29 /* BaseModel.h in Headers */,
 				BEB596A61AA2E9AD0037CB29 /* ConfigService.h in Headers */,
 				BEBA0CB31A983663006E4FEA /* BaseClasses.h in Headers */,
-				BEBA11A01A98416F006E4FEA /* Service.h in Headers */,
 				BE46C4C61AD6212C001738C3 /* RKMapping.h in Headers */,
 				BE46C4C41AD62114001738C3 /* RKMacros.h in Headers */,
 				BE46C4BE1AD620A9001738C3 /* RKPropertyMapping.h in Headers */,
@@ -440,8 +427,8 @@
 				BE46C4C81AD6213D001738C3 /* RKObjectMapping.h in Headers */,
 				BE46C4C21AD620FF001738C3 /* RKMappingResult.h in Headers */,
 				BEBA11A61A984201006E4FEA /* User.h in Headers */,
+				BEAD9CCB1B6C5C1600ECB512 /* RKObjectManager.h in Headers */,
 				BE70BECC1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */,
-				BEBA11A11A98416F006E4FEA /* ServiceClient.h in Headers */,
 				BEBA119E1A98416F006E4FEA /* BaseService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -683,9 +670,7 @@
 				BEB596AF1AA2E9E60037CB29 /* Config.m in Sources */,
 				BEB5968B1AA2D4090037CB29 /* BaseService.m in Sources */,
 				BEB596B51AA2EA0E0037CB29 /* BaseModel.m in Sources */,
-				BEB596891AA2D4030037CB29 /* AuthenticationService.m in Sources */,
 				BEB596A91AA2E9AD0037CB29 /* ConfigService.m in Sources */,
-				BEB596901AA2D4170037CB29 /* ServiceClient.m in Sources */,
 				BEB5968D1AA2D4100037CB29 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -694,6 +679,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE9087D51B6B447A00679229 /* ServiceClient.swift in Sources */,
 				BEB596AE1AA2E9E60037CB29 /* Config.m in Sources */,
 				BED338DF1AD237BD008781F2 /* BaseTableViewController.m in Sources */,
 				BEA720F91B5C3393004F97C4 /* ApplicationConfigManager.swift in Sources */,
@@ -701,8 +687,8 @@
 				BEB596B41AA2EA0E0037CB29 /* BaseModel.m in Sources */,
 				BEBA119F1A98416F006E4FEA /* BaseService.m in Sources */,
 				BEB596A81AA2E9AD0037CB29 /* ConfigService.m in Sources */,
-				BEBA11A21A98416F006E4FEA /* ServiceClient.m in Sources */,
-				BEBA119D1A98416F006E4FEA /* AuthenticationService.m in Sources */,
+				BEAD9CE31B6C72B200ECB512 /* Service.swift in Sources */,
+				BE9087D01B6B2B3F00679229 /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -881,6 +867,7 @@
 		BEBA0CC41A983663006E4FEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: William Hindenburg (5EW7K5N9Y3)";
 				DEFINES_MODULE = YES;
@@ -912,6 +899,7 @@
 		BEBA0CC51A983663006E4FEA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: William Hindenburg (5EW7K5N9Y3)";
 				DEFINES_MODULE = YES;
