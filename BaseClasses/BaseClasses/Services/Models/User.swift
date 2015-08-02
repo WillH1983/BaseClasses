@@ -13,9 +13,19 @@ public class User: NSObject {
     public var password = ""
     public var objectId = ""
     public var sessionToken = ""
-    public var className = ""
-    public var objectType = ""
     public var pointsPerWeek:NSNumber = 0
+    
+    public var className: String {
+        get {
+            return "_User"
+        }
+    }
+    
+    public var objectType: String {
+        get {
+            return "Pointer"
+        }
+    }
     
     public class func persistentUserObject() -> User {
         if let userDictionary = NSUserDefaults.standardUserDefaults().objectForKey("userData") as? [String: AnyObject] {
