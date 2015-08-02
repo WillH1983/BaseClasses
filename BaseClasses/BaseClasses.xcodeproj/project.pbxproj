@@ -36,8 +36,6 @@
 		BEB596871AA2D3F90037CB29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11911A983F14006E4FEA /* UIKit.framework */; };
 		BEB5968A1AA2D4060037CB29 /* BaseService.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11971A98416F006E4FEA /* BaseService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEB5968B1AA2D4090037CB29 /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11981A98416F006E4FEA /* BaseService.m */; };
-		BEB5968C1AA2D40D0037CB29 /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11A41A984201006E4FEA /* User.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEB5968D1AA2D4100037CB29 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11A51A984201006E4FEA /* User.m */; };
 		BEB596B21AA2EA0E0037CB29 /* BaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB596B01AA2EA0E0037CB29 /* BaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEB596B31AA2EA0E0037CB29 /* BaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB596B01AA2EA0E0037CB29 /* BaseModel.h */; };
 		BEB596B41AA2EA0E0037CB29 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB596B11AA2EA0E0037CB29 /* BaseModel.m */; };
@@ -57,8 +55,6 @@
 		BEBA11941A983F3C006E4FEA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBA11931A983F3C006E4FEA /* SystemConfiguration.framework */; };
 		BEBA119E1A98416F006E4FEA /* BaseService.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11971A98416F006E4FEA /* BaseService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEBA119F1A98416F006E4FEA /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11981A98416F006E4FEA /* BaseService.m */; };
-		BEBA11A61A984201006E4FEA /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11A41A984201006E4FEA /* User.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEBA11A71A984201006E4FEA /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11A51A984201006E4FEA /* User.m */; };
 		BED24C5C1AA3DF7600926838 /* RestKitMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = BED24C5B1AA3DF7600926838 /* RestKitMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BED24C5D1AA3DF7600926838 /* RestKitMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = BED24C5B1AA3DF7600926838 /* RestKitMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BED338DE1AD237BD008781F2 /* BaseTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BED338DC1AD237BD008781F2 /* BaseTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -69,6 +65,7 @@
 		BEEE84191B6E82C50071BF9D /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE84181B6E82C50071BF9D /* BaseTableViewController.swift */; };
 		BEEE841B1B6E8CC50071BF9D /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE841A1B6E8CC50071BF9D /* BaseModel.swift */; };
 		BEEE841D1B6E8D9D0071BF9D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE841C1B6E8D9D0071BF9D /* Config.swift */; };
+		BEEE841F1B6E92BF0071BF9D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE841E1B6E92BF0071BF9D /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,8 +169,6 @@
 		BEBA11931A983F3C006E4FEA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BEBA11971A98416F006E4FEA /* BaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseService.h; sourceTree = "<group>"; };
 		BEBA11981A98416F006E4FEA /* BaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseService.m; sourceTree = "<group>"; };
-		BEBA11A41A984201006E4FEA /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		BEBA11A51A984201006E4FEA /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		BED24C5B1AA3DF7600926838 /* RestKitMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestKitMapping.h; sourceTree = "<group>"; };
 		BED338DC1AD237BD008781F2 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
 		BED338DD1AD237BD008781F2 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
@@ -183,6 +178,7 @@
 		BEEE84181B6E82C50071BF9D /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		BEEE841A1B6E8CC50071BF9D /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		BEEE841C1B6E8D9D0071BF9D /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		BEEE841E1B6E92BF0071BF9D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,8 +371,7 @@
 				BEB596B11AA2EA0E0037CB29 /* BaseModel.m */,
 				BEEE841A1B6E8CC50071BF9D /* BaseModel.swift */,
 				BEEE841C1B6E8D9D0071BF9D /* Config.swift */,
-				BEBA11A41A984201006E4FEA /* User.h */,
-				BEBA11A51A984201006E4FEA /* User.m */,
+				BEEE841E1B6E92BF0071BF9D /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -398,7 +393,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEB5968C1AA2D40D0037CB29 /* User.h in Headers */,
 				BE70BECD1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */,
 				BEB5967E1AA2D3DD0037CB29 /* BaseClasses.h in Headers */,
 				BEB596B81AA2EB630037CB29 /* ServiceErrors.h in Headers */,
@@ -424,7 +418,6 @@
 				BED338DE1AD237BD008781F2 /* BaseTableViewController.h in Headers */,
 				BE46C4C81AD6213D001738C3 /* RKObjectMapping.h in Headers */,
 				BE46C4C21AD620FF001738C3 /* RKMappingResult.h in Headers */,
-				BEBA11A61A984201006E4FEA /* User.h in Headers */,
 				BEAD9CCB1B6C5C1600ECB512 /* RKObjectManager.h in Headers */,
 				BE70BECC1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */,
 				BEBA119E1A98416F006E4FEA /* BaseService.h in Headers */,
@@ -667,7 +660,6 @@
 			files = (
 				BEB5968B1AA2D4090037CB29 /* BaseService.m in Sources */,
 				BEB596B51AA2EA0E0037CB29 /* BaseModel.m in Sources */,
-				BEB5968D1AA2D4100037CB29 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,7 +674,7 @@
 				BEEE84011B6E44C60071BF9D /* ConfigService.swift in Sources */,
 				BED338DF1AD237BD008781F2 /* BaseTableViewController.m in Sources */,
 				BEA720F91B5C3393004F97C4 /* ApplicationConfigManager.swift in Sources */,
-				BEBA11A71A984201006E4FEA /* User.m in Sources */,
+				BEEE841F1B6E92BF0071BF9D /* User.swift in Sources */,
 				BEB596B41AA2EA0E0037CB29 /* BaseModel.m in Sources */,
 				BEBA119F1A98416F006E4FEA /* BaseService.m in Sources */,
 				BEEE84141B6E81AC0071BF9D /* BaseService.swift in Sources */,

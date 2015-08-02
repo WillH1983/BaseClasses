@@ -11,7 +11,6 @@
 
 #import <UIKit/UIKit.h>
 #import <BaseClasses/ServiceErrors.h>
-#import <BaseClasses/User.h>
 #import <BaseClasses/RestKitMapping.h>
 #import <BaseClasses/BaseTableViewController.h>
 #import <BaseClasses/BaseClasses-Prefix.pch>

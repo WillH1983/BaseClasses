@@ -6,8 +6,9 @@
 //  Copyright (c) 2015 William Hindenburg. All rights reserved.
 //
 
+#import <BaseClasses/BaseClasses-Swift.h>
+
 #import "BaseTableViewController.h"
-#import "User.h"
 #import "ServiceErrors.h"
 
 @interface BaseTableViewController ()

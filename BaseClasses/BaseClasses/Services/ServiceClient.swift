@@ -131,9 +131,8 @@ import RestKit
         let requestDescriptor3 = RKRequestDescriptor(mapping: self.getSerializationMappingForService(service), objectClass: self.getSerializationObjectClassForService(service), rootKeyPath: service.rootRequestKeyPath?(), method: RKRequestMethod.DELETE)
         objectManager.addRequestDescriptorsFromArray([requestDescriptor, requestDescriptor2, requestDescriptor3])
         
-        if let userSessionToken = User.persistentUserObject().sessionToken {
-            objectManager.HTTPClient.setDefaultHeader("X-Parse-Session-Token", value: userSessionToken)
-        }
+        let userSessionToken = User.persistentUserObject().sessionToken as String
+        objectManager.HTTPClient.setDefaultHeader("X-Parse-Session-Token", value: userSessionToken)
         
         if let parseApplicationId = NSBundle.mainBundle().infoDictionary?["ParseApplicationId"] as? String {
             objectManager.HTTPClient.setDefaultHeader("X-Parse-Application-Id", value: parseApplicationId)

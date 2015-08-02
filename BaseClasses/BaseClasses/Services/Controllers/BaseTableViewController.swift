@@ -16,7 +16,7 @@ public class SwiftBaseTableViewController: UITableViewController {
         - Parameter: retryBlock The block that will be executed if the user taps "Retry"
     */
     public func showError(error:NSError, withRetryBlock:(Void -> Void)) {
-        if User.persistentUserObject().sessionToken != nil {
+        if User.persistentUserObject().sessionToken.isEmpty == false {
             let errorMessage = error.localizedDescription
             var title = ""
             var style = UIAlertControllerStyle.ActionSheet
