@@ -69,6 +69,7 @@
 		BED338DF1AD237BD008781F2 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED338DD1AD237BD008781F2 /* BaseTableViewController.m */; };
 		BEEE84011B6E44C60071BF9D /* ConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE84001B6E44C60071BF9D /* ConfigService.swift */; };
 		BEEE84031B6E68800071BF9D /* ServiceErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE84021B6E68800071BF9D /* ServiceErrors.swift */; };
+		BEEE84141B6E81AC0071BF9D /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE84131B6E81AC0071BF9D /* BaseService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +182,7 @@
 		BED338DD1AD237BD008781F2 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		BEEE84001B6E44C60071BF9D /* ConfigService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigService.swift; sourceTree = "<group>"; };
 		BEEE84021B6E68800071BF9D /* ServiceErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceErrors.swift; sourceTree = "<group>"; };
+		BEEE84131B6E81AC0071BF9D /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,6 +339,7 @@
 				BE9087CF1B6B2B3F00679229 /* AuthenticationService.swift */,
 				BEBA11971A98416F006E4FEA /* BaseService.h */,
 				BEBA11981A98416F006E4FEA /* BaseService.m */,
+				BEEE84131B6E81AC0071BF9D /* BaseService.swift */,
 				BEEE84001B6E44C60071BF9D /* ConfigService.swift */,
 				BED338DB1AD236D4008781F2 /* Controllers */,
 				BEBA11A31A984201006E4FEA /* Models */,
@@ -682,6 +685,7 @@
 				BEBA11A71A984201006E4FEA /* User.m in Sources */,
 				BEB596B41AA2EA0E0037CB29 /* BaseModel.m in Sources */,
 				BEBA119F1A98416F006E4FEA /* BaseService.m in Sources */,
+				BEEE84141B6E81AC0071BF9D /* BaseService.swift in Sources */,
 				BEEE84031B6E68800071BF9D /* ServiceErrors.swift in Sources */,
 				BEAD9CE31B6C72B200ECB512 /* Service.swift in Sources */,
 				BE9087D01B6B2B3F00679229 /* AuthenticationService.swift in Sources */,
