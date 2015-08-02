@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class BaseTableViewControllerSwift: UITableViewController {
+public class SwiftBaseTableViewController: UITableViewController {
     
     /**
         Call this method when an error has occured during a service call
