@@ -6,6 +6,9 @@
 //  Copyright (c) 2015 William Hindenburg. All rights reserved.
 //
 
+#ifndef BaseClasses_h
+#define BaseClasses_h
+
 #import <UIKit/UIKit.h>
 #import <BaseClasses/Config.h>
 #import <BaseClasses/ServiceErrors.h>
@@ -14,7 +17,9 @@
 #import <BaseClasses/RestKitMapping.h>
 #import <BaseClasses/BaseTableViewController.h>
 #import <BaseClasses/BaseClasses-Prefix.pch>
+#import <BaseClasses/BaseClasses-Swift.h>
 
+#endif
 
 //! Project version number for BaseClasses.
 FOUNDATION_EXPORT double BaseClassesVersionNumber;
