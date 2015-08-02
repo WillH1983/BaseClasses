@@ -44,7 +44,7 @@ import RestKit
     return seriallMapping;
     }
     */
-    optional func serializedMappingProvider() -> RKObjectMapping
+    @objc optional func serializedMappingProvider() -> RKObjectMapping
     
     /**
     @brief This methoded is called to get base URL of the service.

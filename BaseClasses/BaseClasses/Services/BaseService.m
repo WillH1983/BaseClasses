@@ -8,8 +8,17 @@
 
 
 #import "BaseService.h"
+#import <RestKit/RestKit.h>
 
 @implementation BaseService
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        RKLogConfigureByName("RestKit/Network", RKLogLevelTrace);
+    }
+    return self;
+}
 
 - (NSString *)baseURL {
     return @"https://api.parse.com";

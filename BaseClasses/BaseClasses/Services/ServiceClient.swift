@@ -17,17 +17,13 @@ import RestKit
             let serviceURL = andService.serviceURL?()
             let baseURL = andService.baseURL?()
             if (serviceURL != nil && baseURL != nil) {
-//                if ([lifeService respondsToSelector:@selector(serviceURL)] &&
-//                [lifeService respondsToSelector:@selector(baseURL)]) {
-//                    RKObjectManager *objectManager = [self objectManagerForService:lifeService];
-//                    [objectManager postObject:object path:[lifeService serviceURL] parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-//                        if (successBlock) successBlock(mappingResult);
-//                        } failure:^(RKObjectRequestOperation *operation, NSError *error) {
-//                        if (errorBlock) errorBlock(error);
-//                        }];
-//                }
+                let objectManager = self.objectManagerForService(andService)
+                objectManager.postObject(object, path: serviceURL, parameters: nil, success: { (operation, mappingResult) -> Void in
+                    withSuccessBlock(mappingResult)
+                }, failure: { (operation, error) -> Void in
+                    andError(error)
+                })
             }
-            
         }) { (error) -> Void in
              andError(error)
         }
@@ -38,50 +34,17 @@ import RestKit
             let serviceURL = andService.serviceURL?()
             let baseURL = andService.baseURL?()
             if (serviceURL != nil && baseURL != nil) {
-//                if ([lifeService respondsToSelector:@selector(serviceURL)] &&
-//                [lifeService respondsToSelector:@selector(baseURL)]) {
-//                    RKObjectManager *objectManager = [self objectManagerForService:lifeService];
-//                    [objectManager putObject:object path:[lifeService serviceURL] parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-//                        if (successBlock) successBlock(mappingResult);
-//                        } failure:^(RKObjectRequestOperation *operation, NSError *error) {
-//                        if (errorBlock) errorBlock(error);
-//                        }];
-//                }
+                let objectManager = self.objectManagerForService(andService)
+                objectManager.putObject(object, path: serviceURL, parameters: nil, success: { (operation, mappingResult) -> Void in
+                    withSuccessBlock(mappingResult)
+                }, failure: { (operation, error) -> Void in
+                    andError(error)
+                })
             }
             
             }) { (error) -> Void in
                 andError(error)
             }
-    }
-    
-    private func objectManagerForService(service:Service) -> RKObjectManager {
-        let objectManager = RKObjectManager(baseURL: nil)
-        return objectManager;
-//        RKObjectManager *objectManager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:[service baseURL]]];
-//        [objectManager setAcceptHeaderWithMIMEType:@"*/*"];
-//        [objectManager setRequestSerializationMIMEType:RKMIMETypeJSON];
-//        
-//        [objectManager addResponseDescriptor:[RKResponseDescriptor responseDescriptorWithMapping:[self getMappingForService:service] method:RKRequestMethodGET pathPattern:nil keyPath:[service rootKeyPath] statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)]];
-//        
-//        RKRequestDescriptor *request = [RKRequestDescriptor requestDescriptorWithMapping:[self getSerializationMappingForService:service] objectClass:[self getSerializationObjectClassForService:service] rootKeyPath:[service rootRequestKeyPath] method:RKRequestMethodPOST|RKRequestMethodPUT|RKRequestMethodDELETE];
-//        [objectManager addRequestDescriptor:request];
-//        
-//        User *user = [User persistentUserObject];
-//        if (user.sessionToken) {
-//            [objectManager.HTTPClient setDefaultHeader:@"X-Parse-Session-Token" value:user.sessionToken];
-//        }
-//        
-//        NSDictionary *informationDictionary = [[NSBundle mainBundle] infoDictionary];
-//        NSString *parseApplicationId = [informationDictionary valueForKey:@"ParseApplicationId"];
-//        NSAssert(parseApplicationId != nil, @"Provide a Parse Application Id in the info PLIST file");
-//        
-//        NSString *parseRestAPIKey = [informationDictionary valueForKey:@"ParseRestAPIKey"];
-//        NSAssert(parseRestAPIKey != nil, @"Provide a Parse Rest API key in the info PLIST file");
-//        
-//        [objectManager.HTTPClient setDefaultHeader:@"X-Parse-Application-Id" value:parseApplicationId];
-//        [objectManager.HTTPClient setDefaultHeader:@"X-Parse-REST-API-Key" value:parseRestAPIKey];
-//        RKLogConfigureByName("RestKit/Network", RKLogLevelTrace);
-//        return objectManager;
     }
     
     public func getForService(service: Service, withSuccess:(RKMappingResult -> Void), andError:(NSError -> Void)) {
@@ -89,21 +52,15 @@ import RestKit
             let serviceURL = service.serviceURL?()
             let baseURL = service.baseURL?()
             if (serviceURL != nil && baseURL != nil) {
-//                if ([service respondsToSelector:@selector(serviceURL)] &&
-//                [service respondsToSelector:@selector(baseURL)]) {
-//                    RKObjectManager *objectManager = [self objectManagerForService:service];
-//                    
-//                    [objectManager getObjectsAtPath:[service serviceURL] parameters:[service parameters] success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-//                        successBlock(mappingResult);
-//                        } failure:^(RKObjectRequestOperation *operation, NSError *error) {
-//                        errorBlock(error);
-//                        }];
-//                    
-//                }
+                let objectManager = self.objectManagerForService(service)
+                objectManager.getObjectsAtPath(serviceURL, parameters: service.parameters!(), success: { (operation, mappingResult) -> Void in
+                    withSuccess(mappingResult)
+                }, failure: { (operation, error) -> Void in
+                    andError(error)
+                })
             }
-            
-            }) { (error) -> Void in
-                andError(error)
+        }) { (error) -> Void in
+            andError(error)
         }
     }
     
@@ -113,11 +70,10 @@ import RestKit
             let serviceURL = andService.serviceURL?()
             let baseURL = andService.baseURL?()
             if (serviceURL != nil && baseURL != nil) {
-//                [self deleteObjects:@[object] andService:lifeService withSuccessBlock:successBlock andError:errorBlock];
+                self.deleteObjects([object], andService: andService, withSuccessBlock: withSuccessBlock, andError: andError)
             }
-            
-            }) { (error) -> Void in
-                andError(error)
+        }) { (error) -> Void in
+            andError(error)
         }
     }
     
@@ -127,19 +83,15 @@ import RestKit
             let serviceURL = andService.serviceURL?()
             let baseURL = andService.baseURL?()
             if (serviceURL != nil && baseURL != nil) {
-//                if ([lifeService respondsToSelector:@selector(serviceURL)] &&
-//                [lifeService respondsToSelector:@selector(baseURL)]) {
-//                    RKObjectManager *objectManager = [self objectManagerForService:lifeService];
-//                    [objectManager postObject:objects path:[lifeService serviceURL] parameters:nil success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-//                        if (successBlock) successBlock(mappingResult);
-//                        } failure:^(RKObjectRequestOperation *operation, NSError *error) {
-//                        if (errorBlock) errorBlock(error);
-//                        }];
-//                }
+                let objectManager = self.objectManagerForService(andService)
+                objectManager.deleteObject(objects, path: serviceURL, parameters: andService.parameters!(), success: { (operation, mappingResult) -> Void in
+                    withSuccessBlock(mappingResult)
+                }, failure: { (operation, error) -> Void in
+                    andError(error)
+                })
             }
-            
-            }) { (error) -> Void in
-                andError(error)
+        }) { (error) -> Void in
+            andError(error)
         }
     }
     
@@ -148,61 +100,83 @@ import RestKit
             let serviceURL = withService.serviceURL?()
             let baseURL = withService.baseURL?()
             if (serviceURL != nil && baseURL != nil) {
-//                RKMapperOperation *mapper = [[[RKMapperOperation alloc] init] initWithRepresentation:object mappingsDictionary:@{[service rootKeyPath] : [service mappingProvider] }];
-//                NSError *mappingError = nil;
-//                [mapper execute:&mappingError];
-//                if (mappingError == nil) {
-//                    if (successBlock) successBlock(mapper.mappingResult);
-//                } else {
-//                    if (errorBlock) errorBlock(mappingError);
-//                }
+                let mapper = RKMapperOperation(representation: object, mappingsDictionary: [withService.rootKeyPath!(): withService.mappingProvider!()])
+                do {
+                    try mapper.execute()
+                    withSuccessBlock(mapper.mappingResult)
+                } catch {
+                    andError(mapper.error)
+                }
             }
             
-            }) { (error) -> Void in
+        }) { (error) -> Void in
                 
         }
     }
     
-//    - (Class)getSerializationObjectClassForService:(id<Service>)service {
-//    
-//    if ([service respondsToSelector:@selector(serializedMappingProvider)]) {
-//    return [service serializedMappingProvider].objectClass;
-//    }
-//    
-//    return [NSMutableDictionary class];
-//    }
+    private func objectManagerForService(service:Service) -> RKObjectManager {
+        let objectManager = RKObjectManager(baseURL: NSURL(string: service.baseURL!()))
+        objectManager.setAcceptHeaderWithMIMEType("*/*")
+        objectManager.requestSerializationMIMEType = RKMIMETypeJSON
+        let responseDescriptor = RKResponseDescriptor(mapping: self.getMappingForService(service), method: RKRequestMethod.GET, pathPattern: nil, keyPath: service.rootKeyPath!(), statusCodes: RKStatusCodeIndexSetForClass(RKStatusCodeClass.Successful))
+        objectManager.addResponseDescriptor(responseDescriptor)
+        
+        let requestDescriptor = RKRequestDescriptor(mapping: self.getSerializationMappingForService(service), objectClass: self.getSerializationObjectClassForService(service), rootKeyPath: service.rootKeyPath!(), method: RKRequestMethod.POST)
+        let requestDescriptor2 = RKRequestDescriptor(mapping: self.getSerializationMappingForService(service), objectClass: self.getSerializationObjectClassForService(service), rootKeyPath: service.rootKeyPath!(), method: RKRequestMethod.PUT)
+        let requestDescriptor3 = RKRequestDescriptor(mapping: self.getSerializationMappingForService(service), objectClass: self.getSerializationObjectClassForService(service), rootKeyPath: service.rootKeyPath!(), method: RKRequestMethod.DELETE)
+        objectManager.addRequestDescriptorsFromArray([requestDescriptor, requestDescriptor2, requestDescriptor3])
+        
+        if let userSessionToken = User.persistentUserObject().sessionToken {
+            objectManager.HTTPClient.setDefaultHeader("X-Parse-Session-Token", value: userSessionToken)
+        }
+        
+        if let parseApplicationId = NSBundle.mainBundle().infoDictionary?["ParseApplicationId"] as? String {
+            objectManager.HTTPClient.setDefaultHeader("X-Parse-Application-Id", value: parseApplicationId)
+        } else {
+            assertionFailure("Provide a Parse Application Id in the info PLIST file")
+        }
+        
+        if let parseRestAPIKey = NSBundle.mainBundle().infoDictionary?["ParseRestAPIKey"] as? String {
+            objectManager.HTTPClient.setDefaultHeader("X-Parse-REST-API-Key", value: parseRestAPIKey)
+        } else {
+            assertionFailure("Provide a Parse Rest API key in the info PLIST file")
+        }
+        
+        //        RKLogConfigureByName("RestKit/Network", RKLogLevelTrace);
+        
+        return objectManager;
+    }
     
-//    - (RKObjectMapping *)getSerializationMappingForService:(id<Service>)service {
-//    RKObjectMapping *serializationMapping = nil;
-//    
-//    if ([service respondsToSelector:@selector(serializedMappingProvider)]) {
-//    serializationMapping = [[service serializedMappingProvider] inverseMapping];
-//    
-//    if (serializationMapping) {
-//    [serializationMapping setSetNilForMissingRelationships:YES];
-//    }
-//    }
-//    if (!serializationMapping) {
-//    return [RKObjectMapping mappingForClass:[NSMutableDictionary class]];
-//    }
-//    return serializationMapping;
-//    }
+    private func getSerializationObjectClassForService(service: Service) -> AnyClass {
+        
+        if let objectClass = service.serializedMappingProvider?() {
+            return object_getClass(objectClass)
+        } else {
+            return object_getClass(NSMutableDictionary)
+        }
+    }
     
-//    - (RKObjectMapping *)getMappingForService:(id<Service>)service {
-//    RKObjectMapping *mapping = nil;
-//    
-//    if ([service respondsToSelector:@selector(mappingProvider)]) {
-//    mapping = [service mappingProvider];
-//    
-//    if (mapping) {
-//    [mapping setSetNilForMissingRelationships:YES];
-//    }
-//    }
-//    if (!mapping) {
-//    return [RKObjectMapping mappingForClass:[NSMutableDictionary class]];
-//    }
-//    return mapping;
-//    }
+    private func getSerializationMappingForService(service: Service) -> RKObjectMapping {
+        var serializationMapping: RKObjectMapping
+        if service.serializedMappingProvider?() != nil {
+            serializationMapping = service.serializedMappingProvider!().inverseMapping()
+            serializationMapping.setNilForMissingRelationships = true
+        } else {
+            serializationMapping = RKObjectMapping(forClass: NSMutableDictionary.self)
+        }
+        return serializationMapping
+    }
+    
+    private func getMappingForService(service:Service) -> RKObjectMapping {
+        var mapping: RKObjectMapping
+        if service.mappingProvider?() != nil {
+            mapping = service.mappingProvider!()
+            mapping.setNilForMissingRelationships = true
+        } else {
+            mapping = RKObjectMapping(forClass: NSMutableDictionary.self)
+        }
+        return mapping
+    }
     
     private func checkForErrorCodesWithSuccess(success:() -> Void, andError:(NSError -> Void)) {
         if ApplicationConfigManager.sharedManager.shouldForceUpgrade() {
