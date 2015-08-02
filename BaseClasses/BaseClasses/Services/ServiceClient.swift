@@ -12,6 +12,10 @@ import RestKit
 @objc public class ServiceClient: NSObject, Service {
     let ServiceErrorDomain = "com.Services.BaseClasses"
     
+    public func genericErrorCode() -> NSError {
+        return NSError(domain: ServiceErrorDomain, code: SwiftServiceErrorCode.Generic.rawValue, userInfo: nil)
+    }
+    
     public func postObject(object:AnyObject, andService:Service, withSuccessBlock:(RKMappingResult -> Void), andError:(NSError -> Void)) {
         self.checkForErrorCodesWithSuccess({ () -> Void in
             let serviceURL = andService.serviceURL?()
@@ -185,12 +189,12 @@ import RestKit
             let upgradeTitle = ApplicationConfigManager.sharedManager.forceUpgradeTitle()
             let forceUpgradeURL = ApplicationConfigManager.sharedManager.forceUpgradeURL()
             let mutableUpgradeDictionary = [upgradeMessage: NSLocalizedDescriptionKey, upgradeTitle: kForceUpgradeTitleKey, forceUpgradeURL: kForceUpgradeURL]
-            let error = NSError(domain: ServiceErrorDomain, code: ServiceErrorCode.ForceUpgrade.rawValue, userInfo: mutableUpgradeDictionary)
+            let error = NSError(domain: ServiceErrorDomain, code: SwiftServiceErrorCode.ForceUpgrade.rawValue, userInfo: mutableUpgradeDictionary)
             andError(error)
             
         } else if ApplicationConfigManager.sharedManager.isInMaintenanceMode() {
             let userInfo = [NSLocalizedDescriptionKey: ApplicationConfigManager.sharedManager.maintenanceModeMessage(), kMaintenanceModeErrorTitleKey: "Maintenance Mode"]
-            let error = NSError(domain: ServiceErrorDomain, code: ServiceErrorCode.MaintenanceMode.rawValue, userInfo: userInfo)
+            let error = NSError(domain: ServiceErrorDomain, code: SwiftServiceErrorCode.MaintenanceMode.rawValue, userInfo: userInfo)
             andError(error)
         } else {
             success()

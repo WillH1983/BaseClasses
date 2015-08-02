@@ -38,10 +38,6 @@
 		BEB5968B1AA2D4090037CB29 /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11981A98416F006E4FEA /* BaseService.m */; };
 		BEB5968C1AA2D40D0037CB29 /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11A41A984201006E4FEA /* User.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEB5968D1AA2D4100037CB29 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11A51A984201006E4FEA /* User.m */; };
-		BEB596A61AA2E9AD0037CB29 /* ConfigService.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB596A41AA2E9AD0037CB29 /* ConfigService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEB596A71AA2E9AD0037CB29 /* ConfigService.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB596A41AA2E9AD0037CB29 /* ConfigService.h */; };
-		BEB596A81AA2E9AD0037CB29 /* ConfigService.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB596A51AA2E9AD0037CB29 /* ConfigService.m */; };
-		BEB596A91AA2E9AD0037CB29 /* ConfigService.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB596A51AA2E9AD0037CB29 /* ConfigService.m */; };
 		BEB596AC1AA2E9E60037CB29 /* Config.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB596AA1AA2E9E60037CB29 /* Config.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEB596AD1AA2E9E60037CB29 /* Config.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB596AA1AA2E9E60037CB29 /* Config.h */; };
 		BEB596AE1AA2E9E60037CB29 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB596AB1AA2E9E60037CB29 /* Config.m */; };
@@ -71,6 +67,8 @@
 		BED24C5D1AA3DF7600926838 /* RestKitMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = BED24C5B1AA3DF7600926838 /* RestKitMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BED338DE1AD237BD008781F2 /* BaseTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BED338DC1AD237BD008781F2 /* BaseTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BED338DF1AD237BD008781F2 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED338DD1AD237BD008781F2 /* BaseTableViewController.m */; };
+		BEEE84011B6E44C60071BF9D /* ConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE84001B6E44C60071BF9D /* ConfigService.swift */; };
+		BEEE84031B6E68800071BF9D /* ServiceErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE84021B6E68800071BF9D /* ServiceErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,8 +153,6 @@
 		BEB596701AA2D3B00037CB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEB596711AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseClassesSDK-Prefix.pch"; sourceTree = "<group>"; };
 		BEB596731AA2D3B00037CB29 /* BaseClassesSDK-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BaseClassesSDK-Info.plist"; sourceTree = "<group>"; };
-		BEB596A41AA2E9AD0037CB29 /* ConfigService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigService.h; sourceTree = "<group>"; };
-		BEB596A51AA2E9AD0037CB29 /* ConfigService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigService.m; sourceTree = "<group>"; };
 		BEB596AA1AA2E9E60037CB29 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		BEB596AB1AA2E9E60037CB29 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 		BEB596B01AA2EA0E0037CB29 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -183,6 +179,8 @@
 		BED24C5B1AA3DF7600926838 /* RestKitMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestKitMapping.h; sourceTree = "<group>"; };
 		BED338DC1AD237BD008781F2 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
 		BED338DD1AD237BD008781F2 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		BEEE84001B6E44C60071BF9D /* ConfigService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigService.swift; sourceTree = "<group>"; };
+		BEEE84021B6E68800071BF9D /* ServiceErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,13 +337,13 @@
 				BE9087CF1B6B2B3F00679229 /* AuthenticationService.swift */,
 				BEBA11971A98416F006E4FEA /* BaseService.h */,
 				BEBA11981A98416F006E4FEA /* BaseService.m */,
-				BEB596A41AA2E9AD0037CB29 /* ConfigService.h */,
-				BEB596A51AA2E9AD0037CB29 /* ConfigService.m */,
+				BEEE84001B6E44C60071BF9D /* ConfigService.swift */,
 				BED338DB1AD236D4008781F2 /* Controllers */,
 				BEBA11A31A984201006E4FEA /* Models */,
 				BEAD9CE21B6C72B200ECB512 /* Service.swift */,
 				BE9087D41B6B447A00679229 /* ServiceClient.swift */,
 				BEB596B61AA2EB630037CB29 /* ServiceErrors.h */,
+				BEEE84021B6E68800071BF9D /* ServiceErrors.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -401,7 +399,6 @@
 				BE70BECD1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */,
 				BEB5967E1AA2D3DD0037CB29 /* BaseClasses.h in Headers */,
 				BEB596B81AA2EB630037CB29 /* ServiceErrors.h in Headers */,
-				BEB596A71AA2E9AD0037CB29 /* ConfigService.h in Headers */,
 				BED24C5D1AA3DF7600926838 /* RestKitMapping.h in Headers */,
 				BEB5968A1AA2D4060037CB29 /* BaseService.h in Headers */,
 				BEB596721AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch in Headers */,
@@ -417,7 +414,6 @@
 				BED24C5C1AA3DF7600926838 /* RestKitMapping.h in Headers */,
 				BEB596B71AA2EB630037CB29 /* ServiceErrors.h in Headers */,
 				BEB596B21AA2EA0E0037CB29 /* BaseModel.h in Headers */,
-				BEB596A61AA2E9AD0037CB29 /* ConfigService.h in Headers */,
 				BEBA0CB31A983663006E4FEA /* BaseClasses.h in Headers */,
 				BE46C4C61AD6212C001738C3 /* RKMapping.h in Headers */,
 				BE46C4C41AD62114001738C3 /* RKMacros.h in Headers */,
@@ -670,7 +666,6 @@
 				BEB596AF1AA2E9E60037CB29 /* Config.m in Sources */,
 				BEB5968B1AA2D4090037CB29 /* BaseService.m in Sources */,
 				BEB596B51AA2EA0E0037CB29 /* BaseModel.m in Sources */,
-				BEB596A91AA2E9AD0037CB29 /* ConfigService.m in Sources */,
 				BEB5968D1AA2D4100037CB29 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -681,12 +676,13 @@
 			files = (
 				BE9087D51B6B447A00679229 /* ServiceClient.swift in Sources */,
 				BEB596AE1AA2E9E60037CB29 /* Config.m in Sources */,
+				BEEE84011B6E44C60071BF9D /* ConfigService.swift in Sources */,
 				BED338DF1AD237BD008781F2 /* BaseTableViewController.m in Sources */,
 				BEA720F91B5C3393004F97C4 /* ApplicationConfigManager.swift in Sources */,
 				BEBA11A71A984201006E4FEA /* User.m in Sources */,
 				BEB596B41AA2EA0E0037CB29 /* BaseModel.m in Sources */,
 				BEBA119F1A98416F006E4FEA /* BaseService.m in Sources */,
-				BEB596A81AA2E9AD0037CB29 /* ConfigService.m in Sources */,
+				BEEE84031B6E68800071BF9D /* ServiceErrors.swift in Sources */,
 				BEAD9CE31B6C72B200ECB512 /* Service.swift in Sources */,
 				BE9087D01B6B2B3F00679229 /* AuthenticationService.swift in Sources */,
 			);
