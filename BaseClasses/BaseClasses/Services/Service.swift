@@ -127,6 +127,6 @@ import RestKit
         
         - Returns: The parameters to be encoded and appended as the query string for the request URL.
     */
-    optional func parameters() -> [NSObject : AnyObject]
+    optional func parameters() -> [NSObject : AnyObject]?
 }
 
