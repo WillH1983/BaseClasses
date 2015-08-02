@@ -88,7 +88,7 @@ import RestKit
             let baseURL = andService.baseURL?()
             if (serviceURL != nil && baseURL != nil) {
                 let objectManager = self.objectManagerForService(andService)
-                objectManager.deleteObject(objects, path: serviceURL, parameters: andService.parameters!(), success: { (operation, mappingResult) -> Void in
+                objectManager.postObject(objects, path: serviceURL, parameters: nil, success: { (operation, mappingResult) -> Void in
                     withSuccessBlock(mappingResult)
                 }, failure: { (operation, error) -> Void in
                     andError(error)
