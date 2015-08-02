@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class SwiftConfig: NSObject {
+public class Config: NSObject {
     public var MaintenanceMode:Dictionary<String, AnyObject>? = nil
     public var configRefreshIntervalSeconds:NSNumber? = nil
     public var forceUpgrade:Dictionary<String, AnyObject>? = nil

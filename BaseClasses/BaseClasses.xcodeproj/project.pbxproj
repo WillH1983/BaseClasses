@@ -38,10 +38,6 @@
 		BEB5968B1AA2D4090037CB29 /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11981A98416F006E4FEA /* BaseService.m */; };
 		BEB5968C1AA2D40D0037CB29 /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBA11A41A984201006E4FEA /* User.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEB5968D1AA2D4100037CB29 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBA11A51A984201006E4FEA /* User.m */; };
-		BEB596AC1AA2E9E60037CB29 /* Config.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB596AA1AA2E9E60037CB29 /* Config.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEB596AD1AA2E9E60037CB29 /* Config.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB596AA1AA2E9E60037CB29 /* Config.h */; };
-		BEB596AE1AA2E9E60037CB29 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB596AB1AA2E9E60037CB29 /* Config.m */; };
-		BEB596AF1AA2E9E60037CB29 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB596AB1AA2E9E60037CB29 /* Config.m */; };
 		BEB596B21AA2EA0E0037CB29 /* BaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB596B01AA2EA0E0037CB29 /* BaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEB596B31AA2EA0E0037CB29 /* BaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB596B01AA2EA0E0037CB29 /* BaseModel.h */; };
 		BEB596B41AA2EA0E0037CB29 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB596B11AA2EA0E0037CB29 /* BaseModel.m */; };
@@ -157,8 +153,6 @@
 		BEB596701AA2D3B00037CB29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEB596711AA2D3B00037CB29 /* BaseClassesSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseClassesSDK-Prefix.pch"; sourceTree = "<group>"; };
 		BEB596731AA2D3B00037CB29 /* BaseClassesSDK-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BaseClassesSDK-Info.plist"; sourceTree = "<group>"; };
-		BEB596AA1AA2E9E60037CB29 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
-		BEB596AB1AA2E9E60037CB29 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 		BEB596B01AA2EA0E0037CB29 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		BEB596B11AA2EA0E0037CB29 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		BEB596B61AA2EB630037CB29 /* ServiceErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceErrors.h; sourceTree = "<group>"; };
@@ -380,8 +374,6 @@
 				BEB596B01AA2EA0E0037CB29 /* BaseModel.h */,
 				BEB596B11AA2EA0E0037CB29 /* BaseModel.m */,
 				BEEE841A1B6E8CC50071BF9D /* BaseModel.swift */,
-				BEB596AA1AA2E9E60037CB29 /* Config.h */,
-				BEB596AB1AA2E9E60037CB29 /* Config.m */,
 				BEEE841C1B6E8D9D0071BF9D /* Config.swift */,
 				BEBA11A41A984201006E4FEA /* User.h */,
 				BEBA11A51A984201006E4FEA /* User.m */,
@@ -406,7 +398,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEB596AD1AA2E9E60037CB29 /* Config.h in Headers */,
 				BEB5968C1AA2D40D0037CB29 /* User.h in Headers */,
 				BE70BECD1AA3A9CA00513EE4 /* BaseClasses-Prefix.pch in Headers */,
 				BEB5967E1AA2D3DD0037CB29 /* BaseClasses.h in Headers */,
@@ -422,7 +413,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEB596AC1AA2E9E60037CB29 /* Config.h in Headers */,
 				BED24C5C1AA3DF7600926838 /* RestKitMapping.h in Headers */,
 				BEB596B71AA2EB630037CB29 /* ServiceErrors.h in Headers */,
 				BEB596B21AA2EA0E0037CB29 /* BaseModel.h in Headers */,
@@ -675,7 +665,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEB596AF1AA2E9E60037CB29 /* Config.m in Sources */,
 				BEB5968B1AA2D4090037CB29 /* BaseService.m in Sources */,
 				BEB596B51AA2EA0E0037CB29 /* BaseModel.m in Sources */,
 				BEB5968D1AA2D4100037CB29 /* User.m in Sources */,
@@ -687,7 +676,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE9087D51B6B447A00679229 /* ServiceClient.swift in Sources */,
-				BEB596AE1AA2E9E60037CB29 /* Config.m in Sources */,
 				BEEE841D1B6E8D9D0071BF9D /* Config.swift in Sources */,
 				BEEE841B1B6E8CC50071BF9D /* BaseModel.swift in Sources */,
 				BEEE84191B6E82C50071BF9D /* BaseTableViewController.swift in Sources */,

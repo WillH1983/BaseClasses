@@ -10,12 +10,12 @@
 #define BaseClasses_h
 
 #import <UIKit/UIKit.h>
-#import <BaseClasses/Config.h>
 #import <BaseClasses/ServiceErrors.h>
 #import <BaseClasses/User.h>
 #import <BaseClasses/RestKitMapping.h>
 #import <BaseClasses/BaseTableViewController.h>
 #import <BaseClasses/BaseClasses-Prefix.pch>
+#import <BaseClasses/BaseModel.h>
 #import <BaseClasses/BaseService.h>
 
 #endif

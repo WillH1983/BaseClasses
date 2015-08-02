@@ -73,7 +73,7 @@ import Foundation
             versionNumber = versionNumber?.stringByReplacingOccurrencesOfString(".", withString: "")
             print(versionNumber)
             if (self.config != nil && self.config!.forceUpgrade != nil && versionNumber != nil && buildNumber != nil) {
-                let forceUpgradeDictionary = self.config!.forceUpgrade! as! [String: AnyObject]
+                let forceUpgradeDictionary = self.config!.forceUpgrade! as [String: AnyObject]
                 print(forceUpgradeDictionary)
                 let versionDictionary = forceUpgradeDictionary[versionNumber!] as! [String: AnyObject]
                 print(versionDictionary)

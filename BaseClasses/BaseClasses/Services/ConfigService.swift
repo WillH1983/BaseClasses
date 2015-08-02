@@ -9,7 +9,7 @@
 import UIKit
 import RestKit
 
-@objc public class ConfigService: NSObject, Service {
+@objc public class ConfigService: BaseService, Service {
     public func loadConfigDataWithSuccessBlock(successBlock:Config -> Void, errorBlock:NSError -> Void) {
         ServiceClient().getForService(self, withSuccess: { (mappingResult) -> Void in
             let dataArray = mappingResult.array() as NSArray
@@ -25,10 +25,6 @@ import RestKit
     
     public func serviceURL() -> String {
         return "/1/config"
-    }
-    
-    public func baseURL() -> String {
-        return "https://api.parse.com"
     }
     
     public func rootKeyPath() -> String? {
