@@ -99,8 +99,9 @@ import RestKit
         self.checkForErrorCodesWithSuccess({ () -> Void in
             let serviceURL = withService.serviceURL?()
             let baseURL = withService.baseURL?()
-            if (serviceURL != nil && baseURL != nil) {
-                let mapper = RKMapperOperation(representation: object, mappingsDictionary: [withService.rootKeyPath!(): withService.mappingProvider!()])
+            let rootKeyPath = withService.rootKeyPath?()
+            if (serviceURL != nil && baseURL != nil && rootKeyPath != nil) {
+                let mapper = RKMapperOperation(representation: object, mappingsDictionary: [rootKeyPath!: withService.mappingProvider!()])
                 do {
                     try mapper.execute()
                     withSuccessBlock(mapper.mappingResult)
@@ -121,9 +122,9 @@ import RestKit
         let responseDescriptor = RKResponseDescriptor(mapping: self.getMappingForService(service), method: RKRequestMethod.GET, pathPattern: nil, keyPath: service.rootKeyPath!(), statusCodes: RKStatusCodeIndexSetForClass(RKStatusCodeClass.Successful))
         objectManager.addResponseDescriptor(responseDescriptor)
         
-        let requestDescriptor = RKRequestDescriptor(mapping: self.getSerializationMappingForService(service), objectClass: self.getSerializationObjectClassForService(service), rootKeyPath: service.rootKeyPath!(), method: RKRequestMethod.POST)
-        let requestDescriptor2 = RKRequestDescriptor(mapping: self.getSerializationMappingForService(service), objectClass: self.getSerializationObjectClassForService(service), rootKeyPath: service.rootKeyPath!(), method: RKRequestMethod.PUT)
-        let requestDescriptor3 = RKRequestDescriptor(mapping: self.getSerializationMappingForService(service), objectClass: self.getSerializationObjectClassForService(service), rootKeyPath: service.rootKeyPath!(), method: RKRequestMethod.DELETE)
+        let requestDescriptor = RKRequestDescriptor(mapping: self.getSerializationMappingForService(service), objectClass: self.getSerializationObjectClassForService(service), rootKeyPath: service.rootRequestKeyPath?(), method: RKRequestMethod.POST)
+        let requestDescriptor2 = RKRequestDescriptor(mapping: self.getSerializationMappingForService(service), objectClass: self.getSerializationObjectClassForService(service), rootKeyPath: service.rootRequestKeyPath?(), method: RKRequestMethod.PUT)
+        let requestDescriptor3 = RKRequestDescriptor(mapping: self.getSerializationMappingForService(service), objectClass: self.getSerializationObjectClassForService(service), rootKeyPath: service.rootRequestKeyPath?(), method: RKRequestMethod.DELETE)
         objectManager.addRequestDescriptorsFromArray([requestDescriptor, requestDescriptor2, requestDescriptor3])
         
         if let userSessionToken = User.persistentUserObject().sessionToken {
