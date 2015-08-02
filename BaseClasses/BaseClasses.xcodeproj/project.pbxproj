@@ -70,6 +70,7 @@
 		BEEE84011B6E44C60071BF9D /* ConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE84001B6E44C60071BF9D /* ConfigService.swift */; };
 		BEEE84031B6E68800071BF9D /* ServiceErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE84021B6E68800071BF9D /* ServiceErrors.swift */; };
 		BEEE84141B6E81AC0071BF9D /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE84131B6E81AC0071BF9D /* BaseService.swift */; };
+		BEEE84191B6E82C50071BF9D /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE84181B6E82C50071BF9D /* BaseTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +184,7 @@
 		BEEE84001B6E44C60071BF9D /* ConfigService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigService.swift; sourceTree = "<group>"; };
 		BEEE84021B6E68800071BF9D /* ServiceErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceErrors.swift; sourceTree = "<group>"; };
 		BEEE84131B6E81AC0071BF9D /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		BEEE84181B6E82C50071BF9D /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,6 +388,7 @@
 			children = (
 				BED338DC1AD237BD008781F2 /* BaseTableViewController.h */,
 				BED338DD1AD237BD008781F2 /* BaseTableViewController.m */,
+				BEEE84181B6E82C50071BF9D /* BaseTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -679,6 +682,7 @@
 			files = (
 				BE9087D51B6B447A00679229 /* ServiceClient.swift in Sources */,
 				BEB596AE1AA2E9E60037CB29 /* Config.m in Sources */,
+				BEEE84191B6E82C50071BF9D /* BaseTableViewController.swift in Sources */,
 				BEEE84011B6E44C60071BF9D /* ConfigService.swift in Sources */,
 				BED338DF1AD237BD008781F2 /* BaseTableViewController.m in Sources */,
 				BEA720F91B5C3393004F97C4 /* ApplicationConfigManager.swift in Sources */,
