@@ -95,7 +95,7 @@ import RestKit
     return @"users";
     }
     */
-    optional func rootRequestKeyPath() -> String
+    optional func rootRequestKeyPath() -> String?
     
     /**
     @brief This method is used to determine where the mapping of the post Object starts in relation to the JSON.
