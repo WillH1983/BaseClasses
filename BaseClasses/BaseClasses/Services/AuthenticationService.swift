@@ -47,8 +47,8 @@ import RestKit
         }
     }
     
-    public func rootKeyPath() -> String {
-        return ""
+    public func rootKeyPath() -> String? {
+        return nil
     }
     
     public func mappingProvider() -> RKObjectMapping {
