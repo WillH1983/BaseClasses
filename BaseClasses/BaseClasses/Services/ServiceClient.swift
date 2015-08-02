@@ -149,8 +149,8 @@ import RestKit
     
     private func getSerializationObjectClassForService(service: Service) -> AnyClass {
         
-        if let objectClass = service.serializedMappingProvider?() {
-            return object_getClass(objectClass)
+        if let object = service.serializedMappingProvider?() {
+            return object.objectClass!
         } else {
             return object_getClass(NSMutableDictionary)
         }
