@@ -9,7 +9,7 @@
 import Foundation
 import RestKit
 
-@objc public class AuthenticationService: NSObject, Service {
+@objc public class AuthenticationService: BaseService, Service {
     private var params = [String: String]()
     private var loggingIn = false
     
@@ -49,6 +49,10 @@ import RestKit
     
     public func rootKeyPath() -> String? {
         return nil
+    }
+    
+    public func parameters() -> [NSObject : AnyObject]? {
+        return self.params
     }
     
     public func mappingProvider() -> RKObjectMapping {
